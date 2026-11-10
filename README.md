@@ -9,7 +9,7 @@
 | [实验纲要](EXPERIMENT_PROTOCOL.md) | 当前数学模型、参数组合、训练与评测流程、交付标准 | 框架负责人 |
 | [实验状态与执行回传](EXPERIMENT_STATUS.md) | 本轮配置、任务进度、实际参数及结果链接 | 实验执行者 |
 
-**当前版本：2026-11-09-v6.1-posterior-confidence。方案待实现与验证。**
+**当前版本：2026-11-10-v6.2-posterior-confidence。方案待实现与验证。**
 
 可信权重为固定 Beta 先验下的后验概率：
 
@@ -17,7 +17,7 @@ $$
 \lambda_i=\Pr\left(\left|p_i-\frac{K_i}{N_i}\right|\le\varepsilon\mid N_i,K_i\right).
 $$
 
-经验标签为 $K_i/N_i$；所有题共用一个 DRO 半径 $\rho$。开发集搜索全局 $\varepsilon$ 和 $\rho$，先验单独固定并报告。
+经验标签为 $K_i/N_i$；所有题共用一个 DRO 半径 $\rho$。开发集搜索全局 $\varepsilon$ 和 $\rho$，先验单独固定并报告。实验中 $0<\varepsilon\le0.1$，首轮建议网格为 $\{0.025,0.05,0.1\}$。
 
 实验包含两部分：少量异质投票下的五组方法比较，以及 $N=1,5,11,51,101$ 时 soft DPO 向 oracle 表现接近的检验。训练长度为 2048 tokens，主评测指标为平均 RM 奖励和逐题 oracle 短缺。
 
