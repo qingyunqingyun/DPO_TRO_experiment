@@ -1,7 +1,7 @@
 # 实验状态与执行回传
 
-更新日期：2026-11-09  
-当前纲要：[2026-11-09-v6.1-posterior-confidence](EXPERIMENT_PROTOCOL.md)
+更新日期：2026-11-10  
+当前纲要：[2026-11-10-v6.2-posterior-confidence](EXPERIMENT_PROTOCOL.md)
 
 本页只跟踪当前方案。框架负责人维护纲要，实验执行者回填冻结配置、任务进度和结果。本轮 posterior-confidence 方法待实现与验证；尚未登记通过本纲要验收的完整运行。
 
@@ -14,7 +14,7 @@
 | 公共半径 | 所有题同一 $\rho$，KL 方向为经验到候选 | 框架已确定 |
 | 主先验 | 建议 Beta(0.5,0.5) | 运行前冻结 |
 | 先验敏感性 | 建议 Beta(1,1) | 单列预算与结果 |
-| $\varepsilon$ 网格 | 建议 0.1、0.2、0.3 | 运行前冻结 |
+| $\varepsilon$ 网格 | 建议 0.025、0.05、0.1；实验上限固定为 0.1 | 上限已确定，网格运行前冻结 |
 | $\rho$ 网格 | 建议 0.005、0.05、0.1，并包含退化端点 | 运行前冻结 |
 | 数据与模型 | UltraFeedback 回答对；Llama-3.2-1B-Instruct；Skywork Reward V2 Llama-3.1-8B | revision、模板和 hash 待登记 |
 | 数据规模与划分 | 2,000 训练对、500 开发问题、目标 500 个预留确认测试问题 | prompt 清单与 hash 待登记 |
