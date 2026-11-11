@@ -1,0 +1,243 @@
+{
+  "protocol": "2026-11-11-v7.3-epsilon-extension",
+  "source_root": "/mnt/hezhisheng/su/experiment_v7_20261110",
+  "policy": "/mnt/hezhisheng/distributionally_robust_dpo-2/models/Llama1b",
+  "rm": "/mnt/hezhisheng/su/experiment_handoff_v5/models/Skywork-Reward-V2-Llama-3.1-8B",
+  "allocation_seed": 1731,
+  "vote_seed": 2101,
+  "prior": {
+    "a0": 0.5,
+    "b0": 0.5
+  },
+  "epsilon_grid": [
+    0.15,
+    0.2
+  ],
+  "kl_radii": [
+    0.005,
+    0.05,
+    0.1,
+    0.3
+  ],
+  "w1_radii": [
+    0.01,
+    0.05,
+    0.15,
+    0.3
+  ],
+  "quotas": {
+    "train": {
+      "1": 800,
+      "3": 600,
+      "5": 600
+    },
+    "dev": {
+      "1": 200,
+      "3": 150,
+      "5": 150
+    }
+  },
+  "configs": [
+    {
+      "name": "kl_tro_r0005_e015",
+      "method": "tro_trust_common",
+      "distance": "kl",
+      "rho": 0.005,
+      "epsilon": 0.15,
+      "dataset": "/mnt/hezhisheng/su/experiment_v73_20261111/datasets/kl_tro_r0005_e015",
+      "train_rows": 2000,
+      "dev_rows": 500,
+      "source_batch": "v73_epsilon_extension",
+      "protocol_commit": "33136d47511f477cc0189a82c1e25ae98e805a71"
+    },
+    {
+      "name": "kl_tro_r0005_e02",
+      "method": "tro_trust_common",
+      "distance": "kl",
+      "rho": 0.005,
+      "epsilon": 0.2,
+      "dataset": "/mnt/hezhisheng/su/experiment_v73_20261111/datasets/kl_tro_r0005_e02",
+      "train_rows": 2000,
+      "dev_rows": 500,
+      "source_batch": "v73_epsilon_extension",
+      "protocol_commit": "33136d47511f477cc0189a82c1e25ae98e805a71"
+    },
+    {
+      "name": "kl_tro_r005_e015",
+      "method": "tro_trust_common",
+      "distance": "kl",
+      "rho": 0.05,
+      "epsilon": 0.15,
+      "dataset": "/mnt/hezhisheng/su/experiment_v73_20261111/datasets/kl_tro_r005_e015",
+      "train_rows": 2000,
+      "dev_rows": 500,
+      "source_batch": "v73_epsilon_extension",
+      "protocol_commit": "33136d47511f477cc0189a82c1e25ae98e805a71"
+    },
+    {
+      "name": "kl_tro_r005_e02",
+      "method": "tro_trust_common",
+      "distance": "kl",
+      "rho": 0.05,
+      "epsilon": 0.2,
+      "dataset": "/mnt/hezhisheng/su/experiment_v73_20261111/datasets/kl_tro_r005_e02",
+      "train_rows": 2000,
+      "dev_rows": 500,
+      "source_batch": "v73_epsilon_extension",
+      "protocol_commit": "33136d47511f477cc0189a82c1e25ae98e805a71"
+    },
+    {
+      "name": "kl_tro_r01_e015",
+      "method": "tro_trust_common",
+      "distance": "kl",
+      "rho": 0.1,
+      "epsilon": 0.15,
+      "dataset": "/mnt/hezhisheng/su/experiment_v73_20261111/datasets/kl_tro_r01_e015",
+      "train_rows": 2000,
+      "dev_rows": 500,
+      "source_batch": "v73_epsilon_extension",
+      "protocol_commit": "33136d47511f477cc0189a82c1e25ae98e805a71"
+    },
+    {
+      "name": "kl_tro_r01_e02",
+      "method": "tro_trust_common",
+      "distance": "kl",
+      "rho": 0.1,
+      "epsilon": 0.2,
+      "dataset": "/mnt/hezhisheng/su/experiment_v73_20261111/datasets/kl_tro_r01_e02",
+      "train_rows": 2000,
+      "dev_rows": 500,
+      "source_batch": "v73_epsilon_extension",
+      "protocol_commit": "33136d47511f477cc0189a82c1e25ae98e805a71"
+    },
+    {
+      "name": "kl_tro_r03_e015",
+      "method": "tro_trust_common",
+      "distance": "kl",
+      "rho": 0.3,
+      "epsilon": 0.15,
+      "dataset": "/mnt/hezhisheng/su/experiment_v73_20261111/datasets/kl_tro_r03_e015",
+      "train_rows": 2000,
+      "dev_rows": 500,
+      "source_batch": "v73_epsilon_extension",
+      "protocol_commit": "33136d47511f477cc0189a82c1e25ae98e805a71"
+    },
+    {
+      "name": "kl_tro_r03_e02",
+      "method": "tro_trust_common",
+      "distance": "kl",
+      "rho": 0.3,
+      "epsilon": 0.2,
+      "dataset": "/mnt/hezhisheng/su/experiment_v73_20261111/datasets/kl_tro_r03_e02",
+      "train_rows": 2000,
+      "dev_rows": 500,
+      "source_batch": "v73_epsilon_extension",
+      "protocol_commit": "33136d47511f477cc0189a82c1e25ae98e805a71"
+    },
+    {
+      "name": "w1_tro_r001_e015",
+      "method": "tro_trust_common",
+      "distance": "w1",
+      "rho": 0.01,
+      "epsilon": 0.15,
+      "dataset": "/mnt/hezhisheng/su/experiment_v73_20261111/datasets/w1_tro_r001_e015",
+      "train_rows": 2000,
+      "dev_rows": 500,
+      "source_batch": "v73_epsilon_extension",
+      "protocol_commit": "33136d47511f477cc0189a82c1e25ae98e805a71"
+    },
+    {
+      "name": "w1_tro_r001_e02",
+      "method": "tro_trust_common",
+      "distance": "w1",
+      "rho": 0.01,
+      "epsilon": 0.2,
+      "dataset": "/mnt/hezhisheng/su/experiment_v73_20261111/datasets/w1_tro_r001_e02",
+      "train_rows": 2000,
+      "dev_rows": 500,
+      "source_batch": "v73_epsilon_extension",
+      "protocol_commit": "33136d47511f477cc0189a82c1e25ae98e805a71"
+    },
+    {
+      "name": "w1_tro_r005_e015",
+      "method": "tro_trust_common",
+      "distance": "w1",
+      "rho": 0.05,
+      "epsilon": 0.15,
+      "dataset": "/mnt/hezhisheng/su/experiment_v73_20261111/datasets/w1_tro_r005_e015",
+      "train_rows": 2000,
+      "dev_rows": 500,
+      "source_batch": "v73_epsilon_extension",
+      "protocol_commit": "33136d47511f477cc0189a82c1e25ae98e805a71"
+    },
+    {
+      "name": "w1_tro_r005_e02",
+      "method": "tro_trust_common",
+      "distance": "w1",
+      "rho": 0.05,
+      "epsilon": 0.2,
+      "dataset": "/mnt/hezhisheng/su/experiment_v73_20261111/datasets/w1_tro_r005_e02",
+      "train_rows": 2000,
+      "dev_rows": 500,
+      "source_batch": "v73_epsilon_extension",
+      "protocol_commit": "33136d47511f477cc0189a82c1e25ae98e805a71"
+    },
+    {
+      "name": "w1_tro_r015_e015",
+      "method": "tro_trust_common",
+      "distance": "w1",
+      "rho": 0.15,
+      "epsilon": 0.15,
+      "dataset": "/mnt/hezhisheng/su/experiment_v73_20261111/datasets/w1_tro_r015_e015",
+      "train_rows": 2000,
+      "dev_rows": 500,
+      "source_batch": "v73_epsilon_extension",
+      "protocol_commit": "33136d47511f477cc0189a82c1e25ae98e805a71"
+    },
+    {
+      "name": "w1_tro_r015_e02",
+      "method": "tro_trust_common",
+      "distance": "w1",
+      "rho": 0.15,
+      "epsilon": 0.2,
+      "dataset": "/mnt/hezhisheng/su/experiment_v73_20261111/datasets/w1_tro_r015_e02",
+      "train_rows": 2000,
+      "dev_rows": 500,
+      "source_batch": "v73_epsilon_extension",
+      "protocol_commit": "33136d47511f477cc0189a82c1e25ae98e805a71"
+    },
+    {
+      "name": "w1_tro_r03_e015",
+      "method": "tro_trust_common",
+      "distance": "w1",
+      "rho": 0.3,
+      "epsilon": 0.15,
+      "dataset": "/mnt/hezhisheng/su/experiment_v73_20261111/datasets/w1_tro_r03_e015",
+      "train_rows": 2000,
+      "dev_rows": 500,
+      "source_batch": "v73_epsilon_extension",
+      "protocol_commit": "33136d47511f477cc0189a82c1e25ae98e805a71"
+    },
+    {
+      "name": "w1_tro_r03_e02",
+      "method": "tro_trust_common",
+      "distance": "w1",
+      "rho": 0.3,
+      "epsilon": 0.2,
+      "dataset": "/mnt/hezhisheng/su/experiment_v73_20261111/datasets/w1_tro_r03_e02",
+      "train_rows": 2000,
+      "dev_rows": 500,
+      "source_batch": "v73_epsilon_extension",
+      "protocol_commit": "33136d47511f477cc0189a82c1e25ae98e805a71"
+    }
+  ],
+  "checks": {
+    "config_count": 16,
+    "frozen_inputs_match": true,
+    "reference_table": "passed",
+    "symmetry_and_monotonicity": "passed",
+    "invalid_epsilon_rejected": "passed",
+    "only_epsilon_and_lambda_changed": "passed"
+  },
+  "protocol_repo_commit": "33136d47511f477cc0189a82c1e25ae98e805a71"
+}

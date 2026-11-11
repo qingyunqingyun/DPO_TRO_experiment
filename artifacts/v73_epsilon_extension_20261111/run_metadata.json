@@ -1,0 +1,69 @@
+{
+  "protocol_repo_commit": "33136d47511f477cc0189a82c1e25ae98e805a71",
+  "protocol_repo": "https://github.com/qingyunqingyun/DPO_TRO_experiment",
+  "source_repo_commit": "d6dc68bbaaa51c60b7d1b6ccd991fc6fbc72de4e",
+  "policy": "Llama-3.2-1B-Instruct local Llama1b",
+  "reward_model": "Skywork/Skywork-Reward-V2-Llama-3.1-8B local frozen copy",
+  "train_pairs": 2000,
+  "dev_pairs": 500,
+  "epochs": 2,
+  "effective_batch_size": 128,
+  "allocation_seed": 1731,
+  "vote_seed": 2101,
+  "eval_samples_per_prompt": 10,
+  "configs": 16,
+  "source_worktree_dirty": true,
+  "implementation_note": "Base git commit is insufficient: TRO files were untracked and actor/train_alignment modified before this run. Exact executed source files are frozen under audit/ with hashes; source_changes_relative_to_base.patch covers tracked changes.",
+  "actual_prior": {
+    "a0": 0.5,
+    "b0": 0.5
+  },
+  "kl_direction": "KL(Ber(h)||Ber(p))",
+  "w1_transport_cost": 1,
+  "actual_generation_seed": 2101,
+  "status": "running",
+  "finished_scoring_utc": null,
+  "timing": null,
+  "oracle_temperature": 9.2548828125,
+  "training": {
+    "epochs": 2,
+    "dp_world_size": 2,
+    "microbatch_pairs_per_rank": 1,
+    "gradient_accumulation": 64,
+    "effective_batch_pairs": 128,
+    "optimizer_updates": 31,
+    "scheduler_planned_updates": 30,
+    "final_uncommitted_pairs": 32
+  },
+  "hashes": {
+    "input": "audit/input_and_math_checks.json",
+    "initial_models_and_tokenizers": "audit/initial_model_hashes.json",
+    "trained_models": "audit/model_exports.json",
+    "scores": "audit/eval_checks.json"
+  },
+  "checks": {
+    "inputs_and_math": "audit/input_and_math_checks.json",
+    "trainer": "audit/trainer_loss_checks.json",
+    "eval": "audit/eval_checks.json"
+  },
+  "complete_configs": 0,
+  "scored_generations": 0,
+  "protocol_version": "2026-11-11-v7.3-epsilon-extension",
+  "prepared_utc": "2026-11-11T07:05:08.505779+00:00",
+  "previous_batch": "/mnt/hezhisheng/su/experiment_v7_20261110",
+  "planned_scored_generations": 80000,
+  "extension_epsilon": [
+    0.15,
+    0.2
+  ],
+  "training_behavior": "Unmodified archived trainer, 31 actual updates, scheduler planned 30; final 32 pair gradients uncommitted, to be verified in run logs.",
+  "started_utc": "2026-11-11T07:07:18.388602+00:00",
+  "pipeline_pid": 1241507,
+  "gpu_assignment": {
+    "training": [
+      5,
+      7
+    ],
+    "evaluation": 4
+  }
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "path": "data/observations/base_dev.jsonl",
+    "bytes": 113678,
+    "sha256": "05637fc141e078014af57ebc436b9ebc2cab426e5377dfaf4ca9a462149f955d"
+  },
+  {
+    "path": "data/observations/base_train.jsonl",
+    "bytes": 459227,
+    "sha256": "ae462cf6a47c3e48393645f1ab12714b08d52037d35a2396c4ee172eb96421d4"
+  },
+  {
+    "path": "data/oracle/dev.jsonl",
+    "bytes": 234447,
+    "sha256": "f4983d9ce8be871418f3fed6b63d326e71f4392d3206ea642924f3f93d9f1917"
+  },
+  {
+    "path": "data/oracle/train.jsonl",
+    "bytes": 938238,
+    "sha256": "70a22a9b476036d002e33d0dced78494031c5113d13a4e8e33edea068eee5340"
+  },
+  {
+    "path": "data/pairs/dev.jsonl",
+    "bytes": 2144166,
+    "sha256": "3c444c0dff068101e5db346974cf3b4438e599708430e89a9cbf8c839caaf223"
+  },
+  {
+    "path": "data/pairs/train.jsonl",
+    "bytes": 8871171,
+    "sha256": "ffb9e2cbfd769f720864e763d4b129e3cef714de631bab5c0fcb1531a99dc4a6"
+  }
+]
