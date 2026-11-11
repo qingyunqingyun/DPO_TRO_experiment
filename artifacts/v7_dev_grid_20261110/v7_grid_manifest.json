@@ -1,0 +1,510 @@
+{
+  "protocol": "2026-11-10-v7.2-dev-grid",
+  "source_root": "/mnt/hezhisheng/su/1030-lastest/experiment_handoff_v5",
+  "policy": "/mnt/hezhisheng/distributionally_robust_dpo-2/models/Llama1b",
+  "rm": "/mnt/hezhisheng/su/experiment_handoff_v5/models/Skywork-Reward-V2-Llama-3.1-8B",
+  "allocation_seed": 1731,
+  "vote_seed": 2101,
+  "prior": {
+    "a0": 0.5,
+    "b0": 0.5
+  },
+  "epsilon_grid": [
+    0.025,
+    0.05,
+    0.1
+  ],
+  "kl_radii": [
+    0.005,
+    0.05,
+    0.1,
+    0.3
+  ],
+  "w1_radii": [
+    0.01,
+    0.05,
+    0.15,
+    0.3
+  ],
+  "quotas": {
+    "train": {
+      "1": 800,
+      "3": 600,
+      "5": 600
+    },
+    "dev": {
+      "1": 200,
+      "3": 150,
+      "5": 150
+    }
+  },
+  "configs": [
+    {
+      "name": "soft_dpo",
+      "method": "soft_dpo",
+      "distance": null,
+      "rho": null,
+      "epsilon": null,
+      "dataset": "/mnt/hezhisheng/su/experiment_v7_20261110/datasets/soft_dpo",
+      "train_rows": 2000,
+      "dev_rows": 500
+    },
+    {
+      "name": "oracle_soft_dpo",
+      "method": "oracle_soft_dpo",
+      "distance": null,
+      "rho": null,
+      "epsilon": null,
+      "dataset": "/mnt/hezhisheng/su/experiment_v7_20261110/datasets/oracle_soft_dpo",
+      "train_rows": 2000,
+      "dev_rows": 500
+    },
+    {
+      "name": "kl_dro_r0005",
+      "method": "label_dro_common",
+      "distance": "kl",
+      "rho": 0.005,
+      "epsilon": null,
+      "dataset": "/mnt/hezhisheng/su/experiment_v7_20261110/datasets/kl_dro_r0005",
+      "train_rows": 2000,
+      "dev_rows": 500
+    },
+    {
+      "name": "kl_tro_r0005_e0025",
+      "method": "tro_trust_common",
+      "distance": "kl",
+      "rho": 0.005,
+      "epsilon": 0.025,
+      "dataset": "/mnt/hezhisheng/su/experiment_v7_20261110/datasets/kl_tro_r0005_e0025",
+      "train_rows": 2000,
+      "dev_rows": 500
+    },
+    {
+      "name": "kl_tro_r0005_e005",
+      "method": "tro_trust_common",
+      "distance": "kl",
+      "rho": 0.005,
+      "epsilon": 0.05,
+      "dataset": "/mnt/hezhisheng/su/experiment_v7_20261110/datasets/kl_tro_r0005_e005",
+      "train_rows": 2000,
+      "dev_rows": 500
+    },
+    {
+      "name": "kl_tro_r0005_e01",
+      "method": "tro_trust_common",
+      "distance": "kl",
+      "rho": 0.005,
+      "epsilon": 0.1,
+      "dataset": "/mnt/hezhisheng/su/experiment_v7_20261110/datasets/kl_tro_r0005_e01",
+      "train_rows": 2000,
+      "dev_rows": 500
+    },
+    {
+      "name": "kl_dro_r005",
+      "method": "label_dro_common",
+      "distance": "kl",
+      "rho": 0.05,
+      "epsilon": null,
+      "dataset": "/mnt/hezhisheng/su/experiment_v7_20261110/datasets/kl_dro_r005",
+      "train_rows": 2000,
+      "dev_rows": 500
+    },
+    {
+      "name": "kl_tro_r005_e0025",
+      "method": "tro_trust_common",
+      "distance": "kl",
+      "rho": 0.05,
+      "epsilon": 0.025,
+      "dataset": "/mnt/hezhisheng/su/experiment_v7_20261110/datasets/kl_tro_r005_e0025",
+      "train_rows": 2000,
+      "dev_rows": 500
+    },
+    {
+      "name": "kl_tro_r005_e005",
+      "method": "tro_trust_common",
+      "distance": "kl",
+      "rho": 0.05,
+      "epsilon": 0.05,
+      "dataset": "/mnt/hezhisheng/su/experiment_v7_20261110/datasets/kl_tro_r005_e005",
+      "train_rows": 2000,
+      "dev_rows": 500
+    },
+    {
+      "name": "kl_tro_r005_e01",
+      "method": "tro_trust_common",
+      "distance": "kl",
+      "rho": 0.05,
+      "epsilon": 0.1,
+      "dataset": "/mnt/hezhisheng/su/experiment_v7_20261110/datasets/kl_tro_r005_e01",
+      "train_rows": 2000,
+      "dev_rows": 500
+    },
+    {
+      "name": "kl_dro_r01",
+      "method": "label_dro_common",
+      "distance": "kl",
+      "rho": 0.1,
+      "epsilon": null,
+      "dataset": "/mnt/hezhisheng/su/experiment_v7_20261110/datasets/kl_dro_r01",
+      "train_rows": 2000,
+      "dev_rows": 500
+    },
+    {
+      "name": "kl_tro_r01_e0025",
+      "method": "tro_trust_common",
+      "distance": "kl",
+      "rho": 0.1,
+      "epsilon": 0.025,
+      "dataset": "/mnt/hezhisheng/su/experiment_v7_20261110/datasets/kl_tro_r01_e0025",
+      "train_rows": 2000,
+      "dev_rows": 500
+    },
+    {
+      "name": "kl_tro_r01_e005",
+      "method": "tro_trust_common",
+      "distance": "kl",
+      "rho": 0.1,
+      "epsilon": 0.05,
+      "dataset": "/mnt/hezhisheng/su/experiment_v7_20261110/datasets/kl_tro_r01_e005",
+      "train_rows": 2000,
+      "dev_rows": 500
+    },
+    {
+      "name": "kl_tro_r01_e01",
+      "method": "tro_trust_common",
+      "distance": "kl",
+      "rho": 0.1,
+      "epsilon": 0.1,
+      "dataset": "/mnt/hezhisheng/su/experiment_v7_20261110/datasets/kl_tro_r01_e01",
+      "train_rows": 2000,
+      "dev_rows": 500
+    },
+    {
+      "name": "kl_dro_r03",
+      "method": "label_dro_common",
+      "distance": "kl",
+      "rho": 0.3,
+      "epsilon": null,
+      "dataset": "/mnt/hezhisheng/su/experiment_v7_20261110/datasets/kl_dro_r03",
+      "train_rows": 2000,
+      "dev_rows": 500
+    },
+    {
+      "name": "kl_tro_r03_e0025",
+      "method": "tro_trust_common",
+      "distance": "kl",
+      "rho": 0.3,
+      "epsilon": 0.025,
+      "dataset": "/mnt/hezhisheng/su/experiment_v7_20261110/datasets/kl_tro_r03_e0025",
+      "train_rows": 2000,
+      "dev_rows": 500
+    },
+    {
+      "name": "kl_tro_r03_e005",
+      "method": "tro_trust_common",
+      "distance": "kl",
+      "rho": 0.3,
+      "epsilon": 0.05,
+      "dataset": "/mnt/hezhisheng/su/experiment_v7_20261110/datasets/kl_tro_r03_e005",
+      "train_rows": 2000,
+      "dev_rows": 500
+    },
+    {
+      "name": "kl_tro_r03_e01",
+      "method": "tro_trust_common",
+      "distance": "kl",
+      "rho": 0.3,
+      "epsilon": 0.1,
+      "dataset": "/mnt/hezhisheng/su/experiment_v7_20261110/datasets/kl_tro_r03_e01",
+      "train_rows": 2000,
+      "dev_rows": 500
+    },
+    {
+      "name": "w1_dro_r001",
+      "method": "label_dro_common",
+      "distance": "w1",
+      "rho": 0.01,
+      "epsilon": null,
+      "dataset": "/mnt/hezhisheng/su/experiment_v7_20261110/datasets/w1_dro_r001",
+      "train_rows": 2000,
+      "dev_rows": 500
+    },
+    {
+      "name": "w1_tro_r001_e0025",
+      "method": "tro_trust_common",
+      "distance": "w1",
+      "rho": 0.01,
+      "epsilon": 0.025,
+      "dataset": "/mnt/hezhisheng/su/experiment_v7_20261110/datasets/w1_tro_r001_e0025",
+      "train_rows": 2000,
+      "dev_rows": 500
+    },
+    {
+      "name": "w1_tro_r001_e005",
+      "method": "tro_trust_common",
+      "distance": "w1",
+      "rho": 0.01,
+      "epsilon": 0.05,
+      "dataset": "/mnt/hezhisheng/su/experiment_v7_20261110/datasets/w1_tro_r001_e005",
+      "train_rows": 2000,
+      "dev_rows": 500
+    },
+    {
+      "name": "w1_tro_r001_e01",
+      "method": "tro_trust_common",
+      "distance": "w1",
+      "rho": 0.01,
+      "epsilon": 0.1,
+      "dataset": "/mnt/hezhisheng/su/experiment_v7_20261110/datasets/w1_tro_r001_e01",
+      "train_rows": 2000,
+      "dev_rows": 500
+    },
+    {
+      "name": "w1_dro_r005",
+      "method": "label_dro_common",
+      "distance": "w1",
+      "rho": 0.05,
+      "epsilon": null,
+      "dataset": "/mnt/hezhisheng/su/experiment_v7_20261110/datasets/w1_dro_r005",
+      "train_rows": 2000,
+      "dev_rows": 500
+    },
+    {
+      "name": "w1_tro_r005_e0025",
+      "method": "tro_trust_common",
+      "distance": "w1",
+      "rho": 0.05,
+      "epsilon": 0.025,
+      "dataset": "/mnt/hezhisheng/su/experiment_v7_20261110/datasets/w1_tro_r005_e0025",
+      "train_rows": 2000,
+      "dev_rows": 500
+    },
+    {
+      "name": "w1_tro_r005_e005",
+      "method": "tro_trust_common",
+      "distance": "w1",
+      "rho": 0.05,
+      "epsilon": 0.05,
+      "dataset": "/mnt/hezhisheng/su/experiment_v7_20261110/datasets/w1_tro_r005_e005",
+      "train_rows": 2000,
+      "dev_rows": 500
+    },
+    {
+      "name": "w1_tro_r005_e01",
+      "method": "tro_trust_common",
+      "distance": "w1",
+      "rho": 0.05,
+      "epsilon": 0.1,
+      "dataset": "/mnt/hezhisheng/su/experiment_v7_20261110/datasets/w1_tro_r005_e01",
+      "train_rows": 2000,
+      "dev_rows": 500
+    },
+    {
+      "name": "w1_dro_r015",
+      "method": "label_dro_common",
+      "distance": "w1",
+      "rho": 0.15,
+      "epsilon": null,
+      "dataset": "/mnt/hezhisheng/su/experiment_v7_20261110/datasets/w1_dro_r015",
+      "train_rows": 2000,
+      "dev_rows": 500
+    },
+    {
+      "name": "w1_tro_r015_e0025",
+      "method": "tro_trust_common",
+      "distance": "w1",
+      "rho": 0.15,
+      "epsilon": 0.025,
+      "dataset": "/mnt/hezhisheng/su/experiment_v7_20261110/datasets/w1_tro_r015_e0025",
+      "train_rows": 2000,
+      "dev_rows": 500
+    },
+    {
+      "name": "w1_tro_r015_e005",
+      "method": "tro_trust_common",
+      "distance": "w1",
+      "rho": 0.15,
+      "epsilon": 0.05,
+      "dataset": "/mnt/hezhisheng/su/experiment_v7_20261110/datasets/w1_tro_r015_e005",
+      "train_rows": 2000,
+      "dev_rows": 500
+    },
+    {
+      "name": "w1_tro_r015_e01",
+      "method": "tro_trust_common",
+      "distance": "w1",
+      "rho": 0.15,
+      "epsilon": 0.1,
+      "dataset": "/mnt/hezhisheng/su/experiment_v7_20261110/datasets/w1_tro_r015_e01",
+      "train_rows": 2000,
+      "dev_rows": 500
+    },
+    {
+      "name": "w1_dro_r03",
+      "method": "label_dro_common",
+      "distance": "w1",
+      "rho": 0.3,
+      "epsilon": null,
+      "dataset": "/mnt/hezhisheng/su/experiment_v7_20261110/datasets/w1_dro_r03",
+      "train_rows": 2000,
+      "dev_rows": 500
+    },
+    {
+      "name": "w1_tro_r03_e0025",
+      "method": "tro_trust_common",
+      "distance": "w1",
+      "rho": 0.3,
+      "epsilon": 0.025,
+      "dataset": "/mnt/hezhisheng/su/experiment_v7_20261110/datasets/w1_tro_r03_e0025",
+      "train_rows": 2000,
+      "dev_rows": 500
+    },
+    {
+      "name": "w1_tro_r03_e005",
+      "method": "tro_trust_common",
+      "distance": "w1",
+      "rho": 0.3,
+      "epsilon": 0.05,
+      "dataset": "/mnt/hezhisheng/su/experiment_v7_20261110/datasets/w1_tro_r03_e005",
+      "train_rows": 2000,
+      "dev_rows": 500
+    },
+    {
+      "name": "w1_tro_r03_e01",
+      "method": "tro_trust_common",
+      "distance": "w1",
+      "rho": 0.3,
+      "epsilon": 0.1,
+      "dataset": "/mnt/hezhisheng/su/experiment_v7_20261110/datasets/w1_tro_r03_e01",
+      "train_rows": 2000,
+      "dev_rows": 500
+    }
+  ],
+  "checks": {
+    "config_count": 34,
+    "train_rows": 2000,
+    "dev_rows": 500,
+    "quotas": {
+      "train": {
+        "1": 800,
+        "3": 600,
+        "5": 600
+      },
+      "dev": {
+        "1": 200,
+        "3": 150,
+        "5": 150
+      }
+    },
+    "posterior_checks": [
+      {
+        "n": 1,
+        "k": 0,
+        "lambda": [
+          0.2004748542086696,
+          0.28231435578921393,
+          0.3958186964094077
+        ]
+      },
+      {
+        "n": 1,
+        "k": 1,
+        "lambda": [
+          0.20047485420866962,
+          0.28231435578921416,
+          0.3958186964094079
+        ]
+      },
+      {
+        "n": 3,
+        "k": 0,
+        "lambda": [
+          0.3154716644394717,
+          0.4369721963014599,
+          0.592916177934411
+        ]
+      },
+      {
+        "n": 3,
+        "k": 1,
+        "lambda": [
+          0.07996711124878497,
+          0.15956705549511935,
+          0.31616170405239624
+        ]
+      },
+      {
+        "n": 3,
+        "k": 2,
+        "lambda": [
+          0.07996711124878486,
+          0.15956705549511957,
+          0.31616170405239635
+        ]
+      },
+      {
+        "n": 3,
+        "k": 3,
+        "lambda": [
+          0.3154716644394717,
+          0.4369721963014599,
+          0.5929161779344108
+        ]
+      },
+      {
+        "n": 5,
+        "k": 0,
+        "lambda": [
+          0.39408296707365137,
+          0.5372755052899539,
+          0.7074815446042269
+        ]
+      },
+      {
+        "n": 5,
+        "k": 1,
+        "lambda": [
+          0.119024016233718,
+          0.23694561574952794,
+          0.4644042767354862
+        ]
+      },
+      {
+        "n": 5,
+        "k": 2,
+        "lambda": [
+          0.09564809144943387,
+          0.1903319380744964,
+          0.3730122833356883
+        ]
+      },
+      {
+        "n": 5,
+        "k": 3,
+        "lambda": [
+          0.09564809144943381,
+          0.19033193807449694,
+          0.3730122833356884
+        ]
+      },
+      {
+        "n": 5,
+        "k": 4,
+        "lambda": [
+          0.11902401623371794,
+          0.23694561574952833,
+          0.46440427673548584
+        ]
+      },
+      {
+        "n": 5,
+        "k": 5,
+        "lambda": [
+          0.39408296707365154,
+          0.5372755052899542,
+          0.7074815446042269
+        ]
+      }
+    ]
+  }
+}

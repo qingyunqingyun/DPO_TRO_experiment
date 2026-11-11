@@ -1,0 +1,9 @@
+{
+  "first_full_train_start_utc": "2026-11-10T09:14:49.382329+00:00",
+  "last_model_export_utc": "2026-11-10T12:05:35+00:00",
+  "last_scoring_write_utc": "2026-11-10T14:36:47+00:00",
+  "train_wall_hours": 2.8460049086146886,
+  "evaluation_and_interruption_wall_hours": 2.52,
+  "train_to_scoring_wall_hours": 5.366004908614689,
+  "note": "Wall times include initialization, contention, failures and retries. GPU active compute-hours were not instrumented; no claim equating occupied time to utilization."
+}

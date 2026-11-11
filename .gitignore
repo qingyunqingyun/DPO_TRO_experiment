@@ -218,3 +218,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local reconstruction of the published v7 result archive
+artifacts/v7_dev_grid_20261110/experiment_v7_complete.tar.gz
+artifacts/v7_dev_grid_20261110/restored/

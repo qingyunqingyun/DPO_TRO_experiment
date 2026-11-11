@@ -1,0 +1,92 @@
+[
+  {
+    "role": "policy",
+    "path": "/mnt/hezhisheng/distributionally_robust_dpo-2/models/Llama1b/config.json",
+    "sha256": "dfb67fd8afe73a1c75245824ef9d64a6ba8983025447e3bf76aa1ea57ee46152",
+    "bytes": 894
+  },
+  {
+    "role": "policy",
+    "path": "/mnt/hezhisheng/distributionally_robust_dpo-2/models/Llama1b/generation_config.json",
+    "sha256": "6d4f979915331212d7672c68b22a4ddad9e21ed8126cf2bd1ea6b2b88f595c1c",
+    "bytes": 239
+  },
+  {
+    "role": "policy",
+    "path": "/mnt/hezhisheng/distributionally_robust_dpo-2/models/Llama1b/model.safetensors",
+    "sha256": "1ff795ff6a07e6a68085d206fb84417da2f083f68391c2843cd2b8ac6df8538f",
+    "bytes": 2471645608
+  },
+  {
+    "role": "policy",
+    "path": "/mnt/hezhisheng/distributionally_robust_dpo-2/models/Llama1b/special_tokens_map.json",
+    "sha256": "94e708c3f5e64acf85bbe5ad01467a1248faadb73e83b41793087ecced586e8f",
+    "bytes": 454
+  },
+  {
+    "role": "policy",
+    "path": "/mnt/hezhisheng/distributionally_robust_dpo-2/models/Llama1b/tokenizer.json",
+    "sha256": "6b9e4e7fb171f92fd137b777cc2714bf87d11576700a1dcd7a399e7bbe39537b",
+    "bytes": 17209920
+  },
+  {
+    "role": "policy",
+    "path": "/mnt/hezhisheng/distributionally_robust_dpo-2/models/Llama1b/tokenizer_config.json",
+    "sha256": "9ddd255c19fe319c8d4e891163540382e9fbda99f394674f2a929efc47d57458",
+    "bytes": 54669
+  },
+  {
+    "role": "rm",
+    "path": "/mnt/hezhisheng/su/experiment_handoff_v5/models/Skywork-Reward-V2-Llama-3.1-8B/config.json",
+    "sha256": "88109773c20f5977bf4ba73f7cb0ebd60c31f5e18503d35c5e4573cdf1ad1f64",
+    "bytes": 993
+  },
+  {
+    "role": "rm",
+    "path": "/mnt/hezhisheng/su/experiment_handoff_v5/models/Skywork-Reward-V2-Llama-3.1-8B/model-00001-of-00004.safetensors",
+    "sha256": "26c9325aa462dd7f52765eed8d28718818869cb9401df390db4c8f2eaa0cb147",
+    "bytes": 4976698672
+  },
+  {
+    "role": "rm",
+    "path": "/mnt/hezhisheng/su/experiment_handoff_v5/models/Skywork-Reward-V2-Llama-3.1-8B/model-00002-of-00004.safetensors",
+    "sha256": "ed58b66e8c22b3f7aed90b79cdd6b5423fbb1a8148415dba99a607cfc1d75b53",
+    "bytes": 4999802720
+  },
+  {
+    "role": "rm",
+    "path": "/mnt/hezhisheng/su/experiment_handoff_v5/models/Skywork-Reward-V2-Llama-3.1-8B/model-00003-of-00004.safetensors",
+    "sha256": "c9ecd7c9cd6956a9f8020be76cb137e05abc654d5d5f48981ff33388fab30858",
+    "bytes": 4915916176
+  },
+  {
+    "role": "rm",
+    "path": "/mnt/hezhisheng/su/experiment_handoff_v5/models/Skywork-Reward-V2-Llama-3.1-8B/model-00004-of-00004.safetensors",
+    "sha256": "45bc4da2a05a7536367f331ebc487faf6a2969baa1510eeff99e11b2994ce029",
+    "bytes": 117473824
+  },
+  {
+    "role": "rm",
+    "path": "/mnt/hezhisheng/su/experiment_handoff_v5/models/Skywork-Reward-V2-Llama-3.1-8B/model.safetensors.index.json",
+    "sha256": "8a4b0b738cb0795eb1e248cd372e5448264cb3b90ab070a8785d12f022f6222c",
+    "bytes": 23948
+  },
+  {
+    "role": "rm",
+    "path": "/mnt/hezhisheng/su/experiment_handoff_v5/models/Skywork-Reward-V2-Llama-3.1-8B/special_tokens_map.json",
+    "sha256": "f526dabe70ae46e1fb9caff406987c5e46a18f2c572906efa75b890e7833fb2a",
+    "bytes": 340
+  },
+  {
+    "role": "rm",
+    "path": "/mnt/hezhisheng/su/experiment_handoff_v5/models/Skywork-Reward-V2-Llama-3.1-8B/tokenizer.json",
+    "sha256": "6b9e4e7fb171f92fd137b777cc2714bf87d11576700a1dcd7a399e7bbe39537b",
+    "bytes": 17209920
+  },
+  {
+    "role": "rm",
+    "path": "/mnt/hezhisheng/su/experiment_handoff_v5/models/Skywork-Reward-V2-Llama-3.1-8B/tokenizer_config.json",
+    "sha256": "c7db026feb72501d1e343f2ebd704005ce1c2af6993ae9b44354fba30030a66b",
+    "bytes": 50565
+  }
+]

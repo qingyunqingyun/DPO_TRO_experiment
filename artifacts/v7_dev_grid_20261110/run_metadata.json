@@ -1,0 +1,60 @@
+{
+  "protocol_repo_commit": "7beb6b46328c33731ac5684dd5939fc1463fd4fe",
+  "protocol_repo": "https://github.com/qingyunqingyun/DPO_TRO_experiment",
+  "source_repo_commit": "d6dc68bbaaa51c60b7d1b6ccd991fc6fbc72de4e",
+  "started_utc": "2026-11-10T09:14:00Z",
+  "policy": "Llama-3.2-1B-Instruct local Llama1b",
+  "reward_model": "Skywork/Skywork-Reward-V2-Llama-3.1-8B local frozen copy",
+  "train_pairs": 2000,
+  "dev_pairs": 500,
+  "epochs": 2,
+  "effective_batch_size": 128,
+  "allocation_seed": 1731,
+  "vote_seed": 2101,
+  "eval_samples_per_prompt": 10,
+  "configs": 34,
+  "source_worktree_dirty": true,
+  "implementation_note": "Base git commit is insufficient: TRO files were untracked and actor/train_alignment modified before this run. Exact executed source files are frozen under audit/ with hashes; source_changes_relative_to_base.patch covers tracked changes.",
+  "actual_prior": {
+    "a0": 0.5,
+    "b0": 0.5
+  },
+  "kl_direction": "KL(Ber(h)||Ber(p))",
+  "w1_transport_cost": 1,
+  "actual_generation_seed": 2101,
+  "status": "completed",
+  "finished_scoring_utc": "2026-11-10T14:36:47+00:00",
+  "timing": {
+    "first_full_train_start_utc": "2026-11-10T09:14:49.382329+00:00",
+    "last_model_export_utc": "2026-11-10T12:05:35+00:00",
+    "last_scoring_write_utc": "2026-11-10T14:36:47+00:00",
+    "train_wall_hours": 2.8460049086146886,
+    "evaluation_and_interruption_wall_hours": 2.52,
+    "train_to_scoring_wall_hours": 5.366004908614689,
+    "note": "Wall times include initialization, contention, failures and retries. GPU active compute-hours were not instrumented; no claim equating occupied time to utilization."
+  },
+  "oracle_temperature": 9.2548828125,
+  "training": {
+    "epochs": 2,
+    "dp_world_size": 2,
+    "microbatch_pairs_per_rank": 1,
+    "gradient_accumulation": 64,
+    "effective_batch_pairs": 128,
+    "optimizer_updates": 31,
+    "scheduler_planned_updates": 30,
+    "final_uncommitted_pairs": 32
+  },
+  "hashes": {
+    "input": "audit/input_and_math_checks.json",
+    "initial_models_and_tokenizers": "audit/initial_model_hashes.json",
+    "trained_models": "audit/model_exports.json",
+    "scores": "audit/eval_checks.json"
+  },
+  "checks": {
+    "inputs_and_math": "audit/input_and_math_checks.json",
+    "trainer": "audit/trainer_loss_checks.json",
+    "eval": "audit/eval_checks.json"
+  },
+  "complete_configs": 34,
+  "scored_generations": 170000
+}
