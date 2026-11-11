@@ -1,0 +1,211 @@
+diff --git a/src/actor.py b/src/actor.py
+index 148ff89..248226d 100644
+--- a/src/actor.py
++++ b/src/actor.py
+@@ -1,3 +1,5 @@
++import os
++
+ import torch
+ import torch.distributed as dist
+ from openrlhf.models import Actor
+@@ -9,7 +11,12 @@ from openrlhf.models.utils import log_probs_from_logits, reset_position_ids
+ class Actor(Actor):
+     def __init__(self, *args, **kwargs):
+         super().__init__(*args, **kwargs)
+-    
++        # WDPO differentiates through the input-gradient penalty. Eager attention
++        # materializes the full sequence-by-sequence matrix and is not viable for
++        # the 2048-token, second-order backward pass. Keep the default unchanged
++        # and opt into PyTorch's memory-efficient SDPA path for WDPO runs.
++        if os.getenv("DRDPO_USE_SDPA", "0") == "1":
++            self.model.config._attn_implementation = "sdpa"
+     def forward(
+         self,
+         sequences: torch.LongTensor,
+@@ -84,4 +91,3 @@ class Actor(Actor):
+             return (action_log_probs, output)
+         else:
+             return action_log_probs
+-    
+\ No newline at end of file
+diff --git a/src/train_alignment.py b/src/train_alignment.py
+index eb1552a..29bac43 100644
+--- a/src/train_alignment.py
++++ b/src/train_alignment.py
+@@ -2,21 +2,41 @@ import argparse
+ import math
+ import os
+ from datetime import datetime
++from torch.optim import AdamW
+ 
+ from datasets import disable_caching
+ from transformers.trainer import get_scheduler
+ disable_caching()
+ 
++from drdpo_flash_attn_compat import install_flash_attn_distributed_fallback
++
++install_flash_attn_distributed_fallback()
++
+ from openrlhf.datasets import RewardDataset
+ from openrlhf.trainer import DPOTrainer
+ from openrlhf.utils import blending_datasets, get_strategy, get_tokenizer
++from openrlhf.utils.deepspeed.deepspeed_utils import get_optimizer_grouped_parameters
+ from actor import Actor
+ from kldpo import KLDPOTrainer
+ from wdpo import WDPOTrainer
+ from drdpo import DRDPOTrainer
++from tro_dataset import TRORewardDataset
++from tro_trainer import TROTrainer
+ 
+ 
+ def train(args):
++    if args.train_task == "wdpo":
++        # WDPO differentiates through the input-gradient penalty, so the
++        # CUDA efficient-SDPA backward is not usable: it has no second
++        # derivative implementation. The math backend supports the required
++        # higher-order derivative while avoiding eager attention's large
++        # materialized attention matrix.
++        import torch
++
++        torch.backends.cuda.enable_flash_sdp(False)
++        torch.backends.cuda.enable_mem_efficient_sdp(False)
++        torch.backends.cuda.enable_math_sdp(True)
++
+     # configure strategy
+     strategy = get_strategy(args)
+     strategy.setup_distributed()
+@@ -60,7 +80,14 @@ def train(args):
+         )
+ 
+     # configure optimizer
+-    optim = strategy.create_optimizer(model, lr=args.learning_rate, betas=args.adam_betas, weight_decay=args.l2)
++    if args.torch_adam:
++        optim = AdamW(
++            get_optimizer_grouped_parameters(model.model, args.l2),
++            lr=args.learning_rate,
++            betas=args.adam_betas,
++        )
++    else:
++        optim = strategy.create_optimizer(model, lr=args.learning_rate, betas=args.adam_betas, weight_decay=args.l2)
+ 
+     # prepare for data and dataset
+     train_data, eval_data = blending_datasets(
+@@ -75,22 +102,25 @@ def train(args):
+     )
+     train_data = train_data.select(range(min(args.max_samples, len(train_data))))
+     eval_data = eval_data.select(range(min(args.max_samples, len(eval_data))))
+-    train_dataset = RewardDataset(
++    dataset_cls = TRORewardDataset if args.train_task == "tro" else RewardDataset
++    train_dataset = dataset_cls(
+         train_data,
+         tokenizer,
+         args.max_len,
+         strategy,
+         input_template=args.input_template,
+         is_dpo=True,
++        num_processors=args.dataset_num_processors,
+         multiple_of=args.ring_attn_size,
+     )
+-    eval_dataset = RewardDataset(
++    eval_dataset = dataset_cls(
+         eval_data,
+         tokenizer,
+         args.max_len,
+         strategy,
+         input_template=args.input_template,
+         is_dpo=True,
++        num_processors=args.dataset_num_processors,
+         multiple_of=args.ring_attn_size,
+     )
+ 
+@@ -111,8 +141,10 @@ def train(args):
+         eval_dataset.packing_collate_fn if args.packing_samples else eval_dataset.collate_fn,
+     )
+ 
+-    # scheduler
+-    num_update_steps_per_epoch = len(train_dataset) // args.train_batch_size
++    # The dataloader drops incomplete micro-batches. Derive the scheduler
++    # length from the actual number of micro-batches and accumulation steps so
++    # it matches the optimizer updates (10162 samples -> 79 steps/epoch here).
++    num_update_steps_per_epoch = max(1, len(train_dataloader) // strategy.accumulated_gradient)
+     max_steps = math.ceil(args.max_epochs * num_update_steps_per_epoch)
+ 
+     scheduler = get_scheduler(
+@@ -145,6 +177,8 @@ def train(args):
+         trainer_cls = WDPOTrainer
+     elif args.train_task == 'drdpo':
+         trainer_cls = DRDPOTrainer
++    elif args.train_task == 'tro':
++        trainer_cls = TROTrainer
+ 
+     trainer = trainer_cls(
+         model=model,
+@@ -179,31 +213,32 @@ if __name__ == "__main__":
+     parser.add_argument("--max_ckpt_mem", type=int, default=1e8)
+ 
+     # DeepSpeed
+-    parser.add_argument("--micro_train_batch_size", type=int, default=8, help="batch size per GPU")
++    parser.add_argument("--micro_train_batch_size", type=int, default=4, help="batch size per GPU; WDPO uses 1 in the official script")
+     parser.add_argument("--train_batch_size", type=int, default=128, help="Global training batch size")
+     parser.add_argument("--load_checkpoint", action="store_true", default=False)
+     parser.add_argument("--max_norm", type=float, default=1.0, help="Gradient clipping")
+-    parser.add_argument("--gradient_checkpointing", action="store_true", default=False)
++    parser.add_argument("--gradient_checkpointing", action=argparse.BooleanOptionalAction, default=True)
+     parser.add_argument("--seed", type=int, default=42)
+     parser.add_argument("--disable_fast_tokenizer", action="store_true", default=False)
+     parser.add_argument("--local_rank", type=int, default=-1, help="local_rank for deepspeed")
+     parser.add_argument("--zero_stage", type=int, default=2, help="DeepSpeed ZeRO stage")
+-    parser.add_argument("--bf16", action="store_true", default=False, help="Enable bfloat16")
++    parser.add_argument("--bf16", action=argparse.BooleanOptionalAction, default=True, help="Enable bfloat16")
+     parser.add_argument("--ref_offload", action="store_true", default=False)
+-    parser.add_argument("--learning_rate", type=float, default=1e-5)
+-    parser.add_argument("--lr_warmup_ratio", type=float, default=0.03)
++    parser.add_argument("--learning_rate", type=float, default=5e-7)
++    parser.add_argument("--lr_warmup_ratio", type=float, default=0.1)
+     parser.add_argument("--zpg", type=int, default=1, help="ZeRO++ max partition size")
+     parser.add_argument("--adam_offload", action="store_true", default=False, help="Offload Adam Optimizer")
+-    parser.add_argument("--flash_attn", action="store_true", default=False, help="Enable FlashAttention2")
++    parser.add_argument("--torch_adam", action="store_true", default=False, help="Use PyTorch AdamW instead of DeepSpeed fused Adam")
++    parser.add_argument("--flash_attn", action=argparse.BooleanOptionalAction, default=True, help="Enable FlashAttention2")
+     parser.add_argument("--grad_accum_dtype", type=str, default=None, help="Adam grad accum data type")
+     parser.add_argument("--overlap_comm", action="store_true", default=False)
+     parser.add_argument("--gradient_checkpointing_use_reentrant", action="store_true", default=False)
+ 
+     # DPO
+-    parser.add_argument('--train_task', type=str, choices=['dpo', 'kldpo', 'wdpo', 'drdpo'])
+-    parser.add_argument("--max_epochs", type=int, default=1)
++    parser.add_argument('--train_task', type=str, choices=['dpo', 'kldpo', 'wdpo', 'drdpo', 'tro'])
++    parser.add_argument("--max_epochs", type=int, default=4)
+     parser.add_argument("--l2", type=float, default=0.0, help="weight decay loss")
+-    parser.add_argument("--beta", type=float, default=0.1)
++    parser.add_argument("--beta", type=float, default=0.01)
+     parser.add_argument("--ipo", action="store_true", default=False)  # IPO https://arxiv.org/pdf/2310.12036v2.pdf
+     parser.add_argument("--label_smoothing", type=float, default=0.0)  # cDPO https://arxiv.org/pdf/2305.18290.pdf
+     parser.add_argument("--aux_loss_coef", type=float, default=0, help="MoE balancing loss")
+@@ -211,9 +246,14 @@ if __name__ == "__main__":
+         "--nll_loss_coef", type=float, default=0, help="Regularization with NLL loss, see LLama 3.1 tech report."
+     )
+     parser.add_argument("--adam_betas", type=float, nargs=2, default=(0.9, 0.95), help="Betas for Adam optimizer")
+-    parser.add_argument("--kldpo_tau", type=float, default=1.0, help="Tau in KLDPO")
+-    parser.add_argument("--wdpo_rho", type=float, default=1.0, help="Rho in WDPO")
++    parser.add_argument("--kldpo_tau", type=float, default=0.1, help="Tau in KLDPO")
++    parser.add_argument("--wdpo_rho", type=float, default=0.001, help="Rho in WDPO")
+     parser.add_argument("--drdpo_beta", type=float, default=1.0, help="Beta\' in DRDPO")
++    parser.add_argument("--tro_method", type=str, default="tro_common", choices=[
++        "hard_dpo", "soft_dpo", "label_dro_common", "tro_common", "tro_trust_common", "oracle_soft_dpo",
++        "label_dro_n", "tro_n", "fixed_lambda_tro", "shuffled_lambda_input_n",
++    ])
++    parser.add_argument("--tro_fixed_lambda", type=float, default=0.5)
+ 
+     # Context Parallel
+     parser.add_argument("--ring_attn_size", type=int, default=1, help="Ring attention group size")
+@@ -252,7 +292,8 @@ if __name__ == "__main__":
+         "--apply_chat_template", action="store_true", default=False, help="Use HF tokenizer chat template"
+     )
+     parser.add_argument("--max_samples", type=int, default=1e8, help="Max number of samples")
+-    parser.add_argument("--max_len", type=int, default=512)
++    parser.add_argument("--max_len", type=int, default=1024)
++    parser.add_argument("--dataset_num_processors", type=int, default=1)
+ 
+     # wandb parameters
+     parser.add_argument("--use_wandb", type=str, default=None)

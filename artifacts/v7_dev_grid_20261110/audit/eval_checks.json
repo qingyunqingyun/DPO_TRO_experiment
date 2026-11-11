@@ -1,0 +1,184 @@
+{
+  "status": "passed",
+  "configs": 34,
+  "samples_per_config": 5000,
+  "total_samples": 170000,
+  "prompt_count": 500,
+  "all_sample_ids_unique": true,
+  "matching_prompt_text": true,
+  "all_rewards_finite": true,
+  "rm_truncated_samples": 0,
+  "max_rm_tokens": 2063,
+  "score_files": {
+    "soft_dpo": {
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/soft_dpo/scored.jsonl",
+      "sha256": "16e80d7d727857e7b83bd57f293fa31ac6747ad0367b0807b3920aa56362674b",
+      "bytes": 14075200
+    },
+    "oracle_soft_dpo": {
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/oracle_soft_dpo/scored.jsonl",
+      "sha256": "42b5042b01fa8bd0d5b71b5948bff424972e3b3c9d044c0fba44a4fc63aafa37",
+      "bytes": 13997153
+    },
+    "kl_dro_r0005": {
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_dro_r0005/scored.jsonl",
+      "sha256": "e2abf23255feb97a6ccb3a81db43a676699f75b61ce55e3868d75a652dd91046",
+      "bytes": 14089691
+    },
+    "kl_tro_r0005_e0025": {
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_tro_r0005_e0025/scored.jsonl",
+      "sha256": "8cf675b25dbd58a285151fd674ffb976259fb7a1b709b998295b88375ddfe5de",
+      "bytes": 13975993
+    },
+    "kl_tro_r0005_e005": {
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_tro_r0005_e005/scored.jsonl",
+      "sha256": "5132d2cff93a6de043cb2c9caf1ce93684ae020fb8afbd8d076cd379f22a20c1",
+      "bytes": 14089693
+    },
+    "kl_tro_r0005_e01": {
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_tro_r0005_e01/scored.jsonl",
+      "sha256": "8f64d2b5849d0f07632df201813b9466f7e6b6aa65a64eda71a39e532ae0f5dd",
+      "bytes": 14073333
+    },
+    "kl_dro_r005": {
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_dro_r005/scored.jsonl",
+      "sha256": "c4b53738870f99e9ac7ac9f0ec1ad9e8c977df175113b47c20be81b7eb868c6f",
+      "bytes": 14010960
+    },
+    "kl_tro_r005_e0025": {
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_tro_r005_e0025/scored.jsonl",
+      "sha256": "b91b6ec9aa8ae3f2070cfbaf8109aa7c97b6e3147d13f271f6e50111a17f95dd",
+      "bytes": 14091643
+    },
+    "kl_tro_r005_e005": {
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_tro_r005_e005/scored.jsonl",
+      "sha256": "6f177be5c103925b4655f3ca90ddaf696a3e98f208b64cd40f6ae49c9460819d",
+      "bytes": 14104683
+    },
+    "kl_tro_r005_e01": {
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_tro_r005_e01/scored.jsonl",
+      "sha256": "fc10b9c1d86533e937dad4537a1dcf5ab383e0ac0828503a2d3f63baacc6369d",
+      "bytes": 14072020
+    },
+    "kl_dro_r01": {
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_dro_r01/scored.jsonl",
+      "sha256": "4850fe16ad9aab2fd5f8983d0cedcf0d9a6e4ef2bc6f24b31d31509c33b41d1c",
+      "bytes": 14047916
+    },
+    "kl_tro_r01_e0025": {
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_tro_r01_e0025/scored.jsonl",
+      "sha256": "2cb3d2d575f11f4bb7041679677f231e56af9a05a0a468e1421fcfedd525b547",
+      "bytes": 14108129
+    },
+    "kl_tro_r01_e005": {
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_tro_r01_e005/scored.jsonl",
+      "sha256": "f1c2e49e7fa30eb0f7d594927bc0c86ca97ee4b20246ff06c474c5212c04067f",
+      "bytes": 14029660
+    },
+    "kl_tro_r01_e01": {
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_tro_r01_e01/scored.jsonl",
+      "sha256": "d48b3bbf98b8e9f67592f9934832d5586f7d7e02640b2db2539982b293966fd2",
+      "bytes": 14018114
+    },
+    "kl_dro_r03": {
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_dro_r03/scored.jsonl",
+      "sha256": "480a3b3c321a4fcb5875a1870fa4a2c6bf6438487abd3b21a81d9c22e3dd4920",
+      "bytes": 14120237
+    },
+    "kl_tro_r03_e0025": {
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_tro_r03_e0025/scored.jsonl",
+      "sha256": "416092e19b0e6970cf8696460b5dd85840708fef787c66b2a9c33da2bceaa96c",
+      "bytes": 14035753
+    },
+    "kl_tro_r03_e005": {
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_tro_r03_e005/scored.jsonl",
+      "sha256": "4a4df0f5e620d706736f714a993543f69d71c5c982be1c320e5106bbd4aa531d",
+      "bytes": 14086769
+    },
+    "kl_tro_r03_e01": {
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_tro_r03_e01/scored.jsonl",
+      "sha256": "63636c89a370cc62219ea510360ce9d6485da826bb8ebf899010ca8ae605ba8e",
+      "bytes": 14066914
+    },
+    "w1_dro_r001": {
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_dro_r001/scored.jsonl",
+      "sha256": "72915b3f1b92e6f0a727078d2eef3e17e98cd4193a96c7eb013dc3a7a6bb0e2a",
+      "bytes": 14058004
+    },
+    "w1_tro_r001_e0025": {
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_tro_r001_e0025/scored.jsonl",
+      "sha256": "b06fe2d4a4d2fd415cfc31d64e5d37d58fd11608347ee83e394079009554255f",
+      "bytes": 14042308
+    },
+    "w1_tro_r001_e005": {
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_tro_r001_e005/scored.jsonl",
+      "sha256": "8b8e6c86444e574c602e633f096c1ac6e75e51d9b099564266eb94454da71a42",
+      "bytes": 14098720
+    },
+    "w1_tro_r001_e01": {
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_tro_r001_e01/scored.jsonl",
+      "sha256": "b7b306007a0ee70ac147ec9260558ce1d0e1ca85b56f1777f497552063a69295",
+      "bytes": 14091024
+    },
+    "w1_dro_r005": {
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_dro_r005/scored.jsonl",
+      "sha256": "23886b24fc1ecad68aaf2c9ed7e27491a742c99e656b98166285a2290cafa45f",
+      "bytes": 14026592
+    },
+    "w1_tro_r005_e0025": {
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_tro_r005_e0025/scored.jsonl",
+      "sha256": "006326bba17d4144e62e8b4576cfe7f8ee95134a33dd3c95221abdee8822c7eb",
+      "bytes": 14002414
+    },
+    "w1_tro_r005_e005": {
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_tro_r005_e005/scored.jsonl",
+      "sha256": "8db4da4e43e223ca1155f735e012d11ee254ace7480a62487d375ae70c8d2424",
+      "bytes": 14085723
+    },
+    "w1_tro_r005_e01": {
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_tro_r005_e01/scored.jsonl",
+      "sha256": "93e5a9d834d4129f9a535c497488ac6933ace752e7851409c9bc99246e60b9f7",
+      "bytes": 14071183
+    },
+    "w1_dro_r015": {
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_dro_r015/scored.jsonl",
+      "sha256": "6cc2ce31ecd10865bfe7859f96b7c7040dc4a6abe4dfeecffe564a5688af9175",
+      "bytes": 14095012
+    },
+    "w1_tro_r015_e0025": {
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_tro_r015_e0025/scored.jsonl",
+      "sha256": "e527e3433a7bb00e778d65e983b55bedb7b628164df98f7b006d8d692d27fb21",
+      "bytes": 14096060
+    },
+    "w1_tro_r015_e005": {
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_tro_r015_e005/scored.jsonl",
+      "sha256": "634e4207bb063a44b558ee3a625f32d88d3874dd63e9b02f5ec29e558344a3e6",
+      "bytes": 14066939
+    },
+    "w1_tro_r015_e01": {
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_tro_r015_e01/scored.jsonl",
+      "sha256": "8b3c53b19089b1d70075f0693f7c4dadde760643a7636778eac49c9bfc98d691",
+      "bytes": 14054019
+    },
+    "w1_dro_r03": {
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_dro_r03/scored.jsonl",
+      "sha256": "3db0391e5f3ce4731122901c5912d8c58b50a31fc13ac5843d3b7c6e1a24c7ec",
+      "bytes": 14067475
+    },
+    "w1_tro_r03_e0025": {
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_tro_r03_e0025/scored.jsonl",
+      "sha256": "12150af8745faadb764900bfc328e095f641a407a8f58d73cc35a05640f95637",
+      "bytes": 14096524
+    },
+    "w1_tro_r03_e005": {
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_tro_r03_e005/scored.jsonl",
+      "sha256": "44b21ea018ab84e5d128896ae9583007f2e63a0aeb3ad740c33a2e14b93d3fac",
+      "bytes": 14045999
+    },
+    "w1_tro_r03_e01": {
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_tro_r03_e01/scored.jsonl",
+      "sha256": "18c5c354a60afdb0bfa5631086de88684bd04e4879852ed773d3a11878eb2ab5",
+      "bytes": 14099440
+    }
+  }
+}

@@ -1,0 +1,274 @@
+[
+  {
+    "name": "soft_dpo",
+    "status": "completed",
+    "checkpoint": "/mnt/hezhisheng/su/experiment_v7_20261110/outputs/soft_dpo/checkpoints_dpo/final_hf",
+    "successful_log": "/mnt/hezhisheng/su/experiment_v7_20261110/logs/train_soft_dpo.log",
+    "retried": false,
+    "initial_returncode": 0
+  },
+  {
+    "name": "oracle_soft_dpo",
+    "status": "completed",
+    "checkpoint": "/mnt/hezhisheng/su/experiment_v7_20261110/outputs/oracle_soft_dpo/checkpoints_dpo/final_hf",
+    "successful_log": "/mnt/hezhisheng/su/experiment_v7_20261110/logs/train_oracle_soft_dpo.log",
+    "retried": false,
+    "initial_returncode": 0
+  },
+  {
+    "name": "kl_dro_r0005",
+    "status": "completed",
+    "checkpoint": "/mnt/hezhisheng/su/experiment_v7_20261110/outputs/kl_dro_r0005/checkpoints_dpo/final_hf",
+    "successful_log": "/mnt/hezhisheng/su/experiment_v7_20261110/logs/train_kl_dro_r0005.log",
+    "retried": false,
+    "initial_returncode": 0
+  },
+  {
+    "name": "kl_tro_r0005_e0025",
+    "status": "completed",
+    "checkpoint": "/mnt/hezhisheng/su/experiment_v7_20261110/outputs/kl_tro_r0005_e0025/checkpoints_dpo/final_hf",
+    "successful_log": "/mnt/hezhisheng/su/experiment_v7_20261110/logs/retry_kl_tro_r0005_e0025.log",
+    "retried": true,
+    "initial_returncode": 1
+  },
+  {
+    "name": "kl_tro_r0005_e005",
+    "status": "completed",
+    "checkpoint": "/mnt/hezhisheng/su/experiment_v7_20261110/outputs/kl_tro_r0005_e005/checkpoints_dpo/final_hf",
+    "successful_log": "/mnt/hezhisheng/su/experiment_v7_20261110/logs/retry_kl_tro_r0005_e005.log",
+    "retried": true,
+    "initial_returncode": 1
+  },
+  {
+    "name": "kl_tro_r0005_e01",
+    "status": "completed",
+    "checkpoint": "/mnt/hezhisheng/su/experiment_v7_20261110/outputs/kl_tro_r0005_e01/checkpoints_dpo/final_hf",
+    "successful_log": "/mnt/hezhisheng/su/experiment_v7_20261110/logs/retry_kl_tro_r0005_e01.log",
+    "retried": true,
+    "initial_returncode": 1
+  },
+  {
+    "name": "kl_dro_r005",
+    "status": "completed",
+    "checkpoint": "/mnt/hezhisheng/su/experiment_v7_20261110/outputs/kl_dro_r005/checkpoints_dpo/final_hf",
+    "successful_log": "/mnt/hezhisheng/su/experiment_v7_20261110/logs/retry_kl_dro_r005.log",
+    "retried": true,
+    "initial_returncode": 1
+  },
+  {
+    "name": "kl_tro_r005_e0025",
+    "status": "completed",
+    "checkpoint": "/mnt/hezhisheng/su/experiment_v7_20261110/outputs/kl_tro_r005_e0025/checkpoints_dpo/final_hf",
+    "successful_log": "/mnt/hezhisheng/su/experiment_v7_20261110/logs/retry_kl_tro_r005_e0025.log",
+    "retried": true,
+    "initial_returncode": 1
+  },
+  {
+    "name": "kl_tro_r005_e005",
+    "status": "completed",
+    "checkpoint": "/mnt/hezhisheng/su/experiment_v7_20261110/outputs/kl_tro_r005_e005/checkpoints_dpo/final_hf",
+    "successful_log": "/mnt/hezhisheng/su/experiment_v7_20261110/logs/retry_kl_tro_r005_e005.log",
+    "retried": true,
+    "initial_returncode": 1
+  },
+  {
+    "name": "kl_tro_r005_e01",
+    "status": "completed",
+    "checkpoint": "/mnt/hezhisheng/su/experiment_v7_20261110/outputs/kl_tro_r005_e01/checkpoints_dpo/final_hf",
+    "successful_log": "/mnt/hezhisheng/su/experiment_v7_20261110/logs/train_kl_tro_r005_e01.log",
+    "retried": false,
+    "initial_returncode": 0
+  },
+  {
+    "name": "kl_dro_r01",
+    "status": "completed",
+    "checkpoint": "/mnt/hezhisheng/su/experiment_v7_20261110/outputs/kl_dro_r01/checkpoints_dpo/final_hf",
+    "successful_log": "/mnt/hezhisheng/su/experiment_v7_20261110/logs/train_kl_dro_r01.log",
+    "retried": false,
+    "initial_returncode": 0
+  },
+  {
+    "name": "kl_tro_r01_e0025",
+    "status": "completed",
+    "checkpoint": "/mnt/hezhisheng/su/experiment_v7_20261110/outputs/kl_tro_r01_e0025/checkpoints_dpo/final_hf",
+    "successful_log": "/mnt/hezhisheng/su/experiment_v7_20261110/logs/train_kl_tro_r01_e0025.log",
+    "retried": false,
+    "initial_returncode": 0
+  },
+  {
+    "name": "kl_tro_r01_e005",
+    "status": "completed",
+    "checkpoint": "/mnt/hezhisheng/su/experiment_v7_20261110/outputs/kl_tro_r01_e005/checkpoints_dpo/final_hf",
+    "successful_log": "/mnt/hezhisheng/su/experiment_v7_20261110/logs/train_kl_tro_r01_e005.log",
+    "retried": false,
+    "initial_returncode": 0
+  },
+  {
+    "name": "kl_tro_r01_e01",
+    "status": "completed",
+    "checkpoint": "/mnt/hezhisheng/su/experiment_v7_20261110/outputs/kl_tro_r01_e01/checkpoints_dpo/final_hf",
+    "successful_log": "/mnt/hezhisheng/su/experiment_v7_20261110/logs/retry_kl_tro_r01_e01.log",
+    "retried": true,
+    "initial_returncode": 1
+  },
+  {
+    "name": "kl_dro_r03",
+    "status": "completed",
+    "checkpoint": "/mnt/hezhisheng/su/experiment_v7_20261110/outputs/kl_dro_r03/checkpoints_dpo/final_hf",
+    "successful_log": "/mnt/hezhisheng/su/experiment_v7_20261110/logs/train_kl_dro_r03.log",
+    "retried": false,
+    "initial_returncode": 0
+  },
+  {
+    "name": "kl_tro_r03_e0025",
+    "status": "completed",
+    "checkpoint": "/mnt/hezhisheng/su/experiment_v7_20261110/outputs/kl_tro_r03_e0025/checkpoints_dpo/final_hf",
+    "successful_log": "/mnt/hezhisheng/su/experiment_v7_20261110/logs/train_kl_tro_r03_e0025.log",
+    "retried": false,
+    "initial_returncode": 0
+  },
+  {
+    "name": "kl_tro_r03_e005",
+    "status": "completed",
+    "checkpoint": "/mnt/hezhisheng/su/experiment_v7_20261110/outputs/kl_tro_r03_e005/checkpoints_dpo/final_hf",
+    "successful_log": "/mnt/hezhisheng/su/experiment_v7_20261110/logs/train_kl_tro_r03_e005.log",
+    "retried": false,
+    "initial_returncode": 0
+  },
+  {
+    "name": "kl_tro_r03_e01",
+    "status": "completed",
+    "checkpoint": "/mnt/hezhisheng/su/experiment_v7_20261110/outputs/kl_tro_r03_e01/checkpoints_dpo/final_hf",
+    "successful_log": "/mnt/hezhisheng/su/experiment_v7_20261110/logs/train_kl_tro_r03_e01.log",
+    "retried": false,
+    "initial_returncode": 0
+  },
+  {
+    "name": "w1_dro_r001",
+    "status": "completed",
+    "checkpoint": "/mnt/hezhisheng/su/experiment_v7_20261110/outputs/w1_dro_r001/checkpoints_dpo/final_hf",
+    "successful_log": "/mnt/hezhisheng/su/experiment_v7_20261110/logs/train_w1_dro_r001.log",
+    "retried": false,
+    "initial_returncode": 0
+  },
+  {
+    "name": "w1_tro_r001_e0025",
+    "status": "completed",
+    "checkpoint": "/mnt/hezhisheng/su/experiment_v7_20261110/outputs/w1_tro_r001_e0025/checkpoints_dpo/final_hf",
+    "successful_log": "/mnt/hezhisheng/su/experiment_v7_20261110/logs/train_w1_tro_r001_e0025.log",
+    "retried": false,
+    "initial_returncode": 0
+  },
+  {
+    "name": "w1_tro_r001_e005",
+    "status": "completed",
+    "checkpoint": "/mnt/hezhisheng/su/experiment_v7_20261110/outputs/w1_tro_r001_e005/checkpoints_dpo/final_hf",
+    "successful_log": "/mnt/hezhisheng/su/experiment_v7_20261110/logs/train_w1_tro_r001_e005.log",
+    "retried": false,
+    "initial_returncode": 0
+  },
+  {
+    "name": "w1_tro_r001_e01",
+    "status": "completed",
+    "checkpoint": "/mnt/hezhisheng/su/experiment_v7_20261110/outputs/w1_tro_r001_e01/checkpoints_dpo/final_hf",
+    "successful_log": "/mnt/hezhisheng/su/experiment_v7_20261110/logs/train_w1_tro_r001_e01.log",
+    "retried": false,
+    "initial_returncode": 0
+  },
+  {
+    "name": "w1_dro_r005",
+    "status": "completed",
+    "checkpoint": "/mnt/hezhisheng/su/experiment_v7_20261110/outputs/w1_dro_r005/checkpoints_dpo/final_hf",
+    "successful_log": "/mnt/hezhisheng/su/experiment_v7_20261110/logs/train_w1_dro_r005.log",
+    "retried": false,
+    "initial_returncode": 0
+  },
+  {
+    "name": "w1_tro_r005_e0025",
+    "status": "completed",
+    "checkpoint": "/mnt/hezhisheng/su/experiment_v7_20261110/outputs/w1_tro_r005_e0025/checkpoints_dpo/final_hf",
+    "successful_log": "/mnt/hezhisheng/su/experiment_v7_20261110/logs/train_w1_tro_r005_e0025.log",
+    "retried": false,
+    "initial_returncode": 0
+  },
+  {
+    "name": "w1_tro_r005_e005",
+    "status": "completed",
+    "checkpoint": "/mnt/hezhisheng/su/experiment_v7_20261110/outputs/w1_tro_r005_e005/checkpoints_dpo/final_hf",
+    "successful_log": "/mnt/hezhisheng/su/experiment_v7_20261110/logs/train_w1_tro_r005_e005.log",
+    "retried": false,
+    "initial_returncode": 0
+  },
+  {
+    "name": "w1_tro_r005_e01",
+    "status": "completed",
+    "checkpoint": "/mnt/hezhisheng/su/experiment_v7_20261110/outputs/w1_tro_r005_e01/checkpoints_dpo/final_hf",
+    "successful_log": "/mnt/hezhisheng/su/experiment_v7_20261110/logs/train_w1_tro_r005_e01.log",
+    "retried": false,
+    "initial_returncode": 0
+  },
+  {
+    "name": "w1_dro_r015",
+    "status": "completed",
+    "checkpoint": "/mnt/hezhisheng/su/experiment_v7_20261110/outputs/w1_dro_r015/checkpoints_dpo/final_hf",
+    "successful_log": "/mnt/hezhisheng/su/experiment_v7_20261110/logs/train_w1_dro_r015.log",
+    "retried": false,
+    "initial_returncode": 0
+  },
+  {
+    "name": "w1_tro_r015_e0025",
+    "status": "completed",
+    "checkpoint": "/mnt/hezhisheng/su/experiment_v7_20261110/outputs/w1_tro_r015_e0025/checkpoints_dpo/final_hf",
+    "successful_log": "/mnt/hezhisheng/su/experiment_v7_20261110/logs/train_w1_tro_r015_e0025.log",
+    "retried": false,
+    "initial_returncode": 0
+  },
+  {
+    "name": "w1_tro_r015_e005",
+    "status": "completed",
+    "checkpoint": "/mnt/hezhisheng/su/experiment_v7_20261110/outputs/w1_tro_r015_e005/checkpoints_dpo/final_hf",
+    "successful_log": "/mnt/hezhisheng/su/experiment_v7_20261110/logs/train_w1_tro_r015_e005.log",
+    "retried": false,
+    "initial_returncode": 0
+  },
+  {
+    "name": "w1_tro_r015_e01",
+    "status": "completed",
+    "checkpoint": "/mnt/hezhisheng/su/experiment_v7_20261110/outputs/w1_tro_r015_e01/checkpoints_dpo/final_hf",
+    "successful_log": "/mnt/hezhisheng/su/experiment_v7_20261110/logs/train_w1_tro_r015_e01.log",
+    "retried": false,
+    "initial_returncode": 0
+  },
+  {
+    "name": "w1_dro_r03",
+    "status": "completed",
+    "checkpoint": "/mnt/hezhisheng/su/experiment_v7_20261110/outputs/w1_dro_r03/checkpoints_dpo/final_hf",
+    "successful_log": "/mnt/hezhisheng/su/experiment_v7_20261110/logs/train_w1_dro_r03.log",
+    "retried": false,
+    "initial_returncode": 0
+  },
+  {
+    "name": "w1_tro_r03_e0025",
+    "status": "completed",
+    "checkpoint": "/mnt/hezhisheng/su/experiment_v7_20261110/outputs/w1_tro_r03_e0025/checkpoints_dpo/final_hf",
+    "successful_log": "/mnt/hezhisheng/su/experiment_v7_20261110/logs/train_w1_tro_r03_e0025.log",
+    "retried": false,
+    "initial_returncode": 0
+  },
+  {
+    "name": "w1_tro_r03_e005",
+    "status": "completed",
+    "checkpoint": "/mnt/hezhisheng/su/experiment_v7_20261110/outputs/w1_tro_r03_e005/checkpoints_dpo/final_hf",
+    "successful_log": "/mnt/hezhisheng/su/experiment_v7_20261110/logs/train_w1_tro_r03_e005.log",
+    "retried": false,
+    "initial_returncode": 0
+  },
+  {
+    "name": "w1_tro_r03_e01",
+    "status": "completed",
+    "checkpoint": "/mnt/hezhisheng/su/experiment_v7_20261110/outputs/w1_tro_r03_e01/checkpoints_dpo/final_hf",
+    "successful_log": "/mnt/hezhisheng/su/experiment_v7_20261110/logs/train_w1_tro_r03_e01.log",
+    "retried": false,
+    "initial_returncode": 0
+  }
+]

@@ -1,0 +1,206 @@
+[
+  {
+    "name": "soft_dpo",
+    "complete": true,
+    "samples": 5000,
+    "scored": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/soft_dpo/scored.jsonl"
+  },
+  {
+    "name": "oracle_soft_dpo",
+    "complete": true,
+    "samples": 5000,
+    "scored": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/oracle_soft_dpo/scored.jsonl"
+  },
+  {
+    "name": "kl_dro_r0005",
+    "complete": true,
+    "samples": 5000,
+    "scored": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_dro_r0005/scored.jsonl"
+  },
+  {
+    "name": "kl_tro_r0005_e0025",
+    "complete": true,
+    "samples": 5000,
+    "scored": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_tro_r0005_e0025/scored.jsonl"
+  },
+  {
+    "name": "kl_tro_r0005_e005",
+    "complete": true,
+    "samples": 5000,
+    "scored": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_tro_r0005_e005/scored.jsonl"
+  },
+  {
+    "name": "kl_tro_r0005_e01",
+    "complete": true,
+    "samples": 5000,
+    "scored": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_tro_r0005_e01/scored.jsonl"
+  },
+  {
+    "name": "kl_dro_r005",
+    "complete": true,
+    "samples": 5000,
+    "scored": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_dro_r005/scored.jsonl"
+  },
+  {
+    "name": "kl_tro_r005_e0025",
+    "complete": true,
+    "samples": 5000,
+    "scored": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_tro_r005_e0025/scored.jsonl"
+  },
+  {
+    "name": "kl_tro_r005_e005",
+    "complete": true,
+    "samples": 5000,
+    "scored": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_tro_r005_e005/scored.jsonl"
+  },
+  {
+    "name": "kl_tro_r005_e01",
+    "complete": true,
+    "samples": 5000,
+    "scored": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_tro_r005_e01/scored.jsonl"
+  },
+  {
+    "name": "kl_dro_r01",
+    "complete": true,
+    "samples": 5000,
+    "scored": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_dro_r01/scored.jsonl"
+  },
+  {
+    "name": "kl_tro_r01_e0025",
+    "complete": true,
+    "samples": 5000,
+    "scored": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_tro_r01_e0025/scored.jsonl"
+  },
+  {
+    "name": "kl_tro_r01_e005",
+    "complete": true,
+    "samples": 5000,
+    "scored": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_tro_r01_e005/scored.jsonl"
+  },
+  {
+    "name": "kl_tro_r01_e01",
+    "complete": true,
+    "samples": 5000,
+    "scored": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_tro_r01_e01/scored.jsonl"
+  },
+  {
+    "name": "kl_dro_r03",
+    "complete": true,
+    "samples": 5000,
+    "scored": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_dro_r03/scored.jsonl"
+  },
+  {
+    "name": "kl_tro_r03_e0025",
+    "complete": true,
+    "samples": 5000,
+    "scored": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_tro_r03_e0025/scored.jsonl"
+  },
+  {
+    "name": "kl_tro_r03_e005",
+    "complete": true,
+    "samples": 5000,
+    "scored": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_tro_r03_e005/scored.jsonl"
+  },
+  {
+    "name": "kl_tro_r03_e01",
+    "complete": true,
+    "samples": 5000,
+    "scored": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_tro_r03_e01/scored.jsonl"
+  },
+  {
+    "name": "w1_dro_r001",
+    "complete": true,
+    "samples": 5000,
+    "scored": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_dro_r001/scored.jsonl"
+  },
+  {
+    "name": "w1_tro_r001_e0025",
+    "complete": true,
+    "samples": 5000,
+    "scored": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_tro_r001_e0025/scored.jsonl"
+  },
+  {
+    "name": "w1_tro_r001_e005",
+    "complete": true,
+    "samples": 5000,
+    "scored": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_tro_r001_e005/scored.jsonl"
+  },
+  {
+    "name": "w1_tro_r001_e01",
+    "complete": true,
+    "samples": 5000,
+    "scored": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_tro_r001_e01/scored.jsonl"
+  },
+  {
+    "name": "w1_dro_r005",
+    "complete": true,
+    "samples": 5000,
+    "scored": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_dro_r005/scored.jsonl"
+  },
+  {
+    "name": "w1_tro_r005_e0025",
+    "complete": true,
+    "samples": 5000,
+    "scored": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_tro_r005_e0025/scored.jsonl"
+  },
+  {
+    "name": "w1_tro_r005_e005",
+    "complete": true,
+    "samples": 5000,
+    "scored": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_tro_r005_e005/scored.jsonl"
+  },
+  {
+    "name": "w1_tro_r005_e01",
+    "complete": true,
+    "samples": 5000,
+    "scored": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_tro_r005_e01/scored.jsonl"
+  },
+  {
+    "name": "w1_dro_r015",
+    "complete": true,
+    "samples": 5000,
+    "scored": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_dro_r015/scored.jsonl"
+  },
+  {
+    "name": "w1_tro_r015_e0025",
+    "complete": true,
+    "samples": 5000,
+    "scored": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_tro_r015_e0025/scored.jsonl"
+  },
+  {
+    "name": "w1_tro_r015_e005",
+    "complete": true,
+    "samples": 5000,
+    "scored": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_tro_r015_e005/scored.jsonl"
+  },
+  {
+    "name": "w1_tro_r015_e01",
+    "complete": true,
+    "samples": 5000,
+    "scored": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_tro_r015_e01/scored.jsonl"
+  },
+  {
+    "name": "w1_dro_r03",
+    "complete": true,
+    "samples": 5000,
+    "scored": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_dro_r03/scored.jsonl"
+  },
+  {
+    "name": "w1_tro_r03_e0025",
+    "complete": true,
+    "samples": 5000,
+    "scored": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_tro_r03_e0025/scored.jsonl"
+  },
+  {
+    "name": "w1_tro_r03_e005",
+    "complete": true,
+    "samples": 5000,
+    "scored": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_tro_r03_e005/scored.jsonl"
+  },
+  {
+    "name": "w1_tro_r03_e01",
+    "complete": true,
+    "samples": 5000,
+    "scored": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_tro_r03_e01/scored.jsonl"
+  }
+]

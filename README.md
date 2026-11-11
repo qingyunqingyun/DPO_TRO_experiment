@@ -9,7 +9,9 @@
 | [实验纲要](EXPERIMENT_PROTOCOL.md) | 当前数学模型、参数组合、训练与评测流程、交付标准 | 框架负责人 |
 | [实验状态与执行回传](EXPERIMENT_STATUS.md) | 本轮配置、任务进度、实际参数及结果链接 | 实验执行者 |
 
-**当前版本：2026-11-10-v7.2-dev-grid。方案待实现与验证。**
+**当前版本：2026-11-10-v7.2-dev-grid。34 组配置的训练、开发集生成、评分与分析已完成。**
+
+本轮交付：[完整报告](artifacts/v7_dev_grid_20261110/reports/V7_DEV_GRID_REPORT.md)、[34 组参数与结果](artifacts/v7_dev_grid_20261110/reports/dev_grid_results.csv)、[归档与恢复说明](artifacts/v7_dev_grid_20261110/README.md)。归档包括全部 170,000 条生成及评分、原始日志、冻结输入和源码快照；模型权重另存共享服务器并登记 hash。执行偏差与统计解释范围见报告。
 
 可信权重为固定 Beta 先验下的后验概率：
 
