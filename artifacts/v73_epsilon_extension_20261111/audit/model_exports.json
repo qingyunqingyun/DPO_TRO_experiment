@@ -1,0 +1,114 @@
+[
+  {
+    "config": "kl_tro_r0005_e015",
+    "path": "/mnt/hezhisheng/su/experiment_v73_20261111/outputs/kl_tro_r0005_e015/checkpoints_dpo/final_hf/model.safetensors",
+    "bytes": 2471645608,
+    "sha256": "dae69da262a5c4ca442f573b34e74db699751a9e741f98a03bd676b75d3296cc",
+    "tensor_count": 146
+  },
+  {
+    "config": "kl_tro_r0005_e02",
+    "path": "/mnt/hezhisheng/su/experiment_v73_20261111/outputs/kl_tro_r0005_e02/checkpoints_dpo/final_hf/model.safetensors",
+    "bytes": 2471645608,
+    "sha256": "b6ba3012d879a6017f77b55baca7b536cebe8aff9623006b8af129059f0b3ea7",
+    "tensor_count": 146
+  },
+  {
+    "config": "kl_tro_r005_e015",
+    "path": "/mnt/hezhisheng/su/experiment_v73_20261111/outputs/kl_tro_r005_e015/checkpoints_dpo/final_hf/model.safetensors",
+    "bytes": 2471645608,
+    "sha256": "266c02ffa2a4737f18fffcda7dc1b45033d581fe2f50e0d4c0e44302803fe339",
+    "tensor_count": 146
+  },
+  {
+    "config": "kl_tro_r005_e02",
+    "path": "/mnt/hezhisheng/su/experiment_v73_20261111/outputs/kl_tro_r005_e02/checkpoints_dpo/final_hf/model.safetensors",
+    "bytes": 2471645608,
+    "sha256": "90b8be979b69c9c98cf5fd55b58b95ed355c9aa7de025cf75ca55abf601ace93",
+    "tensor_count": 146
+  },
+  {
+    "config": "kl_tro_r01_e015",
+    "path": "/mnt/hezhisheng/su/experiment_v73_20261111/outputs/kl_tro_r01_e015/checkpoints_dpo/final_hf/model.safetensors",
+    "bytes": 2471645608,
+    "sha256": "b8e8ccd83ad553936212ef35ee788d98f27447d2f909a5592875c2876c69689e",
+    "tensor_count": 146
+  },
+  {
+    "config": "kl_tro_r01_e02",
+    "path": "/mnt/hezhisheng/su/experiment_v73_20261111/outputs/kl_tro_r01_e02/checkpoints_dpo/final_hf/model.safetensors",
+    "bytes": 2471645608,
+    "sha256": "99b8a6bf1aac5a1bd052850cf9e248a2dc93cf8e10e6b25fbb85b735a5ac37af",
+    "tensor_count": 146
+  },
+  {
+    "config": "kl_tro_r03_e015",
+    "path": "/mnt/hezhisheng/su/experiment_v73_20261111/outputs/kl_tro_r03_e015/checkpoints_dpo/final_hf/model.safetensors",
+    "bytes": 2471645608,
+    "sha256": "75e024f4c054ea5aede6a88186c82edbe7c7fc155a12546e1222bba10021db9d",
+    "tensor_count": 146
+  },
+  {
+    "config": "kl_tro_r03_e02",
+    "path": "/mnt/hezhisheng/su/experiment_v73_20261111/outputs/kl_tro_r03_e02/checkpoints_dpo/final_hf/model.safetensors",
+    "bytes": 2471645608,
+    "sha256": "783d587edd75807599d129d724456adcd15b667752f62c43ffc7a1ab781b8896",
+    "tensor_count": 146
+  },
+  {
+    "config": "w1_tro_r001_e015",
+    "path": "/mnt/hezhisheng/su/experiment_v73_20261111/outputs/w1_tro_r001_e015/checkpoints_dpo/final_hf/model.safetensors",
+    "bytes": 2471645608,
+    "sha256": "8f570a8df610d05b3a057c36e5c32ba1a551d14711b59ba68436eb310fda0820",
+    "tensor_count": 146
+  },
+  {
+    "config": "w1_tro_r001_e02",
+    "path": "/mnt/hezhisheng/su/experiment_v73_20261111/outputs/w1_tro_r001_e02/checkpoints_dpo/final_hf/model.safetensors",
+    "bytes": 2471645608,
+    "sha256": "15217d45aff65a9db5f312d97a23ee0b601af59d6b6b49b37233a045699f094f",
+    "tensor_count": 146
+  },
+  {
+    "config": "w1_tro_r005_e015",
+    "path": "/mnt/hezhisheng/su/experiment_v73_20261111/outputs/w1_tro_r005_e015/checkpoints_dpo/final_hf/model.safetensors",
+    "bytes": 2471645608,
+    "sha256": "da5b3f43e45495813d2f273f008d774ae37624367faeb682146282e11d03e75c",
+    "tensor_count": 146
+  },
+  {
+    "config": "w1_tro_r005_e02",
+    "path": "/mnt/hezhisheng/su/experiment_v73_20261111/outputs/w1_tro_r005_e02/checkpoints_dpo/final_hf/model.safetensors",
+    "bytes": 2471645608,
+    "sha256": "b7036d5e78e3046f38d3ac8d9414ae86339f304e0acb0d8f42968f2e4f663d09",
+    "tensor_count": 146
+  },
+  {
+    "config": "w1_tro_r015_e015",
+    "path": "/mnt/hezhisheng/su/experiment_v73_20261111/outputs/w1_tro_r015_e015/checkpoints_dpo/final_hf/model.safetensors",
+    "bytes": 2471645608,
+    "sha256": "327a1201b6dbc6de82201894766aefc9e4ce7e8a88b49b76bcba91c1242120db",
+    "tensor_count": 146
+  },
+  {
+    "config": "w1_tro_r015_e02",
+    "path": "/mnt/hezhisheng/su/experiment_v73_20261111/outputs/w1_tro_r015_e02/checkpoints_dpo/final_hf/model.safetensors",
+    "bytes": 2471645608,
+    "sha256": "7eda4badab7dd011ddcd029e7bdd556cf8b9cbf8651ab8b8892cb107e417afc7",
+    "tensor_count": 146
+  },
+  {
+    "config": "w1_tro_r03_e015",
+    "path": "/mnt/hezhisheng/su/experiment_v73_20261111/outputs/w1_tro_r03_e015/checkpoints_dpo/final_hf/model.safetensors",
+    "bytes": 2471645608,
+    "sha256": "7c2f90cbfa041a4e862e7bea8f85c4c0990daf8e7a205e08fb8dd5a7d5d48808",
+    "tensor_count": 146
+  },
+  {
+    "config": "w1_tro_r03_e02",
+    "path": "/mnt/hezhisheng/su/experiment_v73_20261111/outputs/w1_tro_r03_e02/checkpoints_dpo/final_hf/model.safetensors",
+    "bytes": 2471645608,
+    "sha256": "33aa42619119d4de7dbfaec2451d4df73605fd46c1f506541611174bdda81cd4",
+    "tensor_count": 146
+  }
+]

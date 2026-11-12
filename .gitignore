@@ -222,3 +222,7 @@ __marimo__/
 # Local reconstruction of the published v7 result archive
 artifacts/v7_dev_grid_20261110/experiment_v7_complete.tar.gz
 artifacts/v7_dev_grid_20261110/restored/
+
+# Local reconstruction of the published v7.3 result archive
+artifacts/v73_epsilon_extension_20261111/experiment_v73_complete.tar.gz
+artifacts/v73_epsilon_extension_20261111/restored/

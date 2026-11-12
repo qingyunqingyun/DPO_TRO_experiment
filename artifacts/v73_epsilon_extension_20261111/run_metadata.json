@@ -21,9 +21,14 @@
   "kl_direction": "KL(Ber(h)||Ber(p))",
   "w1_transport_cost": 1,
   "actual_generation_seed": 2101,
-  "status": "running",
-  "finished_scoring_utc": null,
-  "timing": null,
+  "status": "completed",
+  "finished_scoring_utc": "2026-11-11T10:12:59+00:00",
+  "timing": {
+    "started_utc": "2026-11-11T07:07:18.661494+00:00",
+    "last_model_utc": "2026-11-11T09:47:56+00:00",
+    "last_scoring_utc": "2026-11-11T10:12:59+00:00",
+    "wall_hours": 3.094538473950492
+  },
   "oracle_temperature": 9.2548828125,
   "training": {
     "epochs": 2,
@@ -46,8 +51,8 @@
     "trainer": "audit/trainer_loss_checks.json",
     "eval": "audit/eval_checks.json"
   },
-  "complete_configs": 0,
-  "scored_generations": 0,
+  "complete_configs": 16,
+  "scored_generations": 80000,
   "protocol_version": "2026-11-11-v7.3-epsilon-extension",
   "prepared_utc": "2026-11-11T07:05:08.505779+00:00",
   "previous_batch": "/mnt/hezhisheng/su/experiment_v7_20261110",
@@ -56,7 +61,7 @@
     0.15,
     0.2
   ],
-  "training_behavior": "Unmodified archived trainer, 31 actual updates, scheduler planned 30; final 32 pair gradients uncommitted, to be verified in run logs.",
+  "training_behavior": "Verified archived trainer behavior: 31 optimizer updates, scheduler planned 30; final 32 pair gradients uncommitted. See audit/training_budget_checks.json.",
   "started_utc": "2026-11-11T07:07:18.388602+00:00",
   "pipeline_pid": 1241507,
   "gpu_assignment": {
@@ -65,5 +70,6 @@
       7
     ],
     "evaluation": 4
-  }
+  },
+  "archival_note": "Results, source and audit records are archived in this directory. Added original model hashes and source patch from the unchanged v7.2 implementation for complete provenance. Model weights and optimizer checkpoints remain on shared storage."
 }

@@ -9,9 +9,9 @@
 | [实验纲要](EXPERIMENT_PROTOCOL.md) | 当前数学模型、参数组合、训练与评测流程、交付标准 | 框架负责人 |
 | [实验状态与执行回传](EXPERIMENT_STATUS.md) | 本轮配置、任务进度、实际参数及结果链接 | 实验执行者 |
 
-**当前版本为 2026-11-11-v7.3-epsilon-extension。已有 34 组完成，新增 epsilon=0.15、0.2 的 16 组 TRO 已启动，扩展后共 50 组。**
+**当前版本为 2026-11-11-v7.3-epsilon-extension。新增 16 组已完成训练、生成、评分和分析；合并后共 50 组、250,000 条评分。**
 
-本批[执行登记与启动快照](artifacts/v73_epsilon_extension_20261111/README.md)包含冻结配置、源码及核验记录；实时进度见[状态表第5节](EXPERIMENT_STATUS.md#5-v73-epsilon-扩展补跑)。
+本批交付：[完整扩展报告](artifacts/v73_epsilon_extension_20261111/reports/V73_EPSILON_EXTENSION_REPORT.md)、[50 组参数结果表](artifacts/v73_epsilon_extension_20261111/reports/combined_results.csv)、[80 行配对比较](artifacts/v73_epsilon_extension_20261111/reports/combined_comparisons.csv)、[完整归档与恢复说明](artifacts/v73_epsilon_extension_20261111/README.md)。新增 80,000 条生成与评分、原始日志和实际输入均包含在分卷归档中，完成状态见[状态表第5节](EXPERIMENT_STATUS.md#5-v73-epsilon-扩展补跑)。
 
 已有 34 组交付：[完整报告](artifacts/v7_dev_grid_20261110/reports/V7_DEV_GRID_REPORT.md)、[34 组参数与结果](artifacts/v7_dev_grid_20261110/reports/dev_grid_results.csv)、[归档与恢复说明](artifacts/v7_dev_grid_20261110/README.md)。归档包括全部 170,000 条生成及评分、原始日志、冻结输入和源码快照；模型权重另存共享服务器并登记 hash。执行偏差与统计解释范围见报告。
 

@@ -1,0 +1,92 @@
+[
+  {
+    "path": "audit_trainer.py",
+    "bytes": 2237,
+    "sha256": "7b3c24126327c0d9d0a61b555b57490659a0b29e8bcbc8e1a13a1d57477d7fd9"
+  },
+  {
+    "path": "diagnostics_extension.py",
+    "bytes": 2283,
+    "sha256": "2b49aa23c817941b076016a286d23bcdabfa65b5b7289a9523003cad37f21109"
+  },
+  {
+    "path": "finalize_extension.py",
+    "bytes": 20826,
+    "sha256": "fe64e2f120cffb318029640e72b448befbec2b91a0062922316ec8617d689f3d"
+  },
+  {
+    "path": "prepare_extension.py",
+    "bytes": 6371,
+    "sha256": "ab090ffe7d42f88a1f38211737b09f21c85ebb0dd35b3db9fdca72b4572b740f"
+  },
+  {
+    "path": "run_eval_grid.py",
+    "bytes": 3904,
+    "sha256": "7cc4739ea4ebdfbc9553034af2fc0af90f30a9cafd4e729b7edd26d1b02cc37e"
+  },
+  {
+    "path": "run_pipeline.py",
+    "bytes": 5794,
+    "sha256": "ac2647d0fd4159d76a2a17f55a6272ef931a6164a33d17fafd2ea38943e24253"
+  },
+  {
+    "path": "run_train_grid.py",
+    "bytes": 3783,
+    "sha256": "ba5cadf2e1185f4b8db16bde12205c054c72977d4e2791b2149647ad68e44646"
+  },
+  {
+    "path": "verify_frozen.py",
+    "bytes": 2527,
+    "sha256": "ae55ac9f91ca5b78eb6612eac8f2d16cb4ca38661ec82f86a228f3214146cc08"
+  },
+  {
+    "path": "audit/actor.py",
+    "bytes": 4546,
+    "sha256": "359a55dbb568391a10a569ebee26110ebd6143683c0371d4eb3cc2f69a484d0a"
+  },
+  {
+    "path": "audit/drdpo_flash_attn_compat.py",
+    "bytes": 2247,
+    "sha256": "354e2dce0f9b155d67fb75d2fa6fbcef29e34f4fedff0d6756a10581e6ea7d66"
+  },
+  {
+    "path": "audit/generate_eval.py",
+    "bytes": 2237,
+    "sha256": "3ffc9eeddb21d4adca0a350ab9b0d4b904da50cf43b9014ee31ef1e07cc40f9a"
+  },
+  {
+    "path": "audit/score_skywork.py",
+    "bytes": 2846,
+    "sha256": "5f6a75c4f83e4c6dad5230882b2aa5ffa73fb3efaaabb2d47804e38801b0cbfe"
+  },
+  {
+    "path": "audit/train_alignment.py",
+    "bytes": 14924,
+    "sha256": "e0c060624a76e52d7c1859b681b67daf456b29a01a5decd4916cc4207d36415d"
+  },
+  {
+    "path": "audit/tro_dataset.py",
+    "bytes": 6384,
+    "sha256": "b78d0028d3580f30dbf8e117b02988e6d8d3cc6827c682429b3f5c50bc4bac56"
+  },
+  {
+    "path": "audit/tro_math.py",
+    "bytes": 5548,
+    "sha256": "48d6b14f49968857c0275bdd4606bf536827cfe0c385dbf366305bbd7a875b3d"
+  },
+  {
+    "path": "audit/tro_trainer.py",
+    "bytes": 9236,
+    "sha256": "e8b241c2fb2d093f441d888ef594573916c79ccad34ee8acd59c87d95c38d320"
+  },
+  {
+    "path": "audit/v72_audit_trainer.py",
+    "bytes": 2222,
+    "sha256": "bc0b99b7eea6724d84abbc7ed724d2b391c579caaa6a4fda2701e121825bb540"
+  },
+  {
+    "path": "audit/v72_prepare_v7_grid.py",
+    "bytes": 7472,
+    "sha256": "1301f8f4b376860dc9bccd8496b64bffcb1a75d11063344b2aec2d1270f06955"
+  }
+]
