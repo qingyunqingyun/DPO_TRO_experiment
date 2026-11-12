@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "configs": 16,
+  "cases": 48,
+  "targets_and_gradients": "passed",
+  "pair_weighting_and_microbatch_loss_equivalence": "passed",
+  "scope": "Actual trainer loss dispatcher on CPU; full DeepSpeed distributed accumulation covered by existing trainer behavior and run logs, not this unit audit."
+}

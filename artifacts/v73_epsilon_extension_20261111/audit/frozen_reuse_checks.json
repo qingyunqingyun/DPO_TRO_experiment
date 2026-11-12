@@ -1,0 +1,744 @@
+{
+  "status": "passed",
+  "verified_utc": "2026-11-11T07:05:40.609858+00:00",
+  "files": [
+    {
+      "role": "training_source",
+      "path": "/mnt/hezhisheng/distributionally_robust_dpo-2/src/tro_math.py",
+      "sha256": "48d6b14f49968857c0275bdd4606bf536827cfe0c385dbf366305bbd7a875b3d",
+      "bytes": 5548,
+      "verified": true
+    },
+    {
+      "role": "training_source",
+      "path": "/mnt/hezhisheng/distributionally_robust_dpo-2/src/tro_dataset.py",
+      "sha256": "b78d0028d3580f30dbf8e117b02988e6d8d3cc6827c682429b3f5c50bc4bac56",
+      "bytes": 6384,
+      "verified": true
+    },
+    {
+      "role": "training_source",
+      "path": "/mnt/hezhisheng/distributionally_robust_dpo-2/src/tro_trainer.py",
+      "sha256": "e8b241c2fb2d093f441d888ef594573916c79ccad34ee8acd59c87d95c38d320",
+      "bytes": 9236,
+      "verified": true
+    },
+    {
+      "role": "training_source",
+      "path": "/mnt/hezhisheng/distributionally_robust_dpo-2/src/train_alignment.py",
+      "sha256": "e0c060624a76e52d7c1859b681b67daf456b29a01a5decd4916cc4207d36415d",
+      "bytes": 14924,
+      "verified": true
+    },
+    {
+      "role": "training_source",
+      "path": "/mnt/hezhisheng/distributionally_robust_dpo-2/src/actor.py",
+      "sha256": "359a55dbb568391a10a569ebee26110ebd6143683c0371d4eb3cc2f69a484d0a",
+      "bytes": 4546,
+      "verified": true
+    },
+    {
+      "role": "training_source",
+      "path": "/mnt/hezhisheng/distributionally_robust_dpo-2/src/drdpo_flash_attn_compat.py",
+      "sha256": "354e2dce0f9b155d67fb75d2fa6fbcef29e34f4fedff0d6756a10581e6ea7d66",
+      "bytes": 2247,
+      "verified": true
+    },
+    {
+      "role": "evaluation_source",
+      "path": "/mnt/hezhisheng/su/1030-lastest/experiment_handoff_v5/generate_eval.py",
+      "sha256": "3ffc9eeddb21d4adca0a350ab9b0d4b904da50cf43b9014ee31ef1e07cc40f9a",
+      "bytes": 2237,
+      "verified": true
+    },
+    {
+      "role": "evaluation_source",
+      "path": "/mnt/hezhisheng/su/experiment_handoff_v5/score_skywork.py",
+      "sha256": "5f6a75c4f83e4c6dad5230882b2aa5ffa73fb3efaaabb2d47804e38801b0cbfe",
+      "bytes": 2846,
+      "verified": true
+    },
+    {
+      "role": "policy",
+      "path": "/mnt/hezhisheng/distributionally_robust_dpo-2/models/Llama1b/config.json",
+      "sha256": "dfb67fd8afe73a1c75245824ef9d64a6ba8983025447e3bf76aa1ea57ee46152",
+      "bytes": 894,
+      "verified": true
+    },
+    {
+      "role": "policy",
+      "path": "/mnt/hezhisheng/distributionally_robust_dpo-2/models/Llama1b/generation_config.json",
+      "sha256": "6d4f979915331212d7672c68b22a4ddad9e21ed8126cf2bd1ea6b2b88f595c1c",
+      "bytes": 239,
+      "verified": true
+    },
+    {
+      "role": "policy",
+      "path": "/mnt/hezhisheng/distributionally_robust_dpo-2/models/Llama1b/model.safetensors",
+      "sha256": "1ff795ff6a07e6a68085d206fb84417da2f083f68391c2843cd2b8ac6df8538f",
+      "bytes": 2471645608,
+      "verified": true
+    },
+    {
+      "role": "policy",
+      "path": "/mnt/hezhisheng/distributionally_robust_dpo-2/models/Llama1b/special_tokens_map.json",
+      "sha256": "94e708c3f5e64acf85bbe5ad01467a1248faadb73e83b41793087ecced586e8f",
+      "bytes": 454,
+      "verified": true
+    },
+    {
+      "role": "policy",
+      "path": "/mnt/hezhisheng/distributionally_robust_dpo-2/models/Llama1b/tokenizer.json",
+      "sha256": "6b9e4e7fb171f92fd137b777cc2714bf87d11576700a1dcd7a399e7bbe39537b",
+      "bytes": 17209920,
+      "verified": true
+    },
+    {
+      "role": "policy",
+      "path": "/mnt/hezhisheng/distributionally_robust_dpo-2/models/Llama1b/tokenizer_config.json",
+      "sha256": "9ddd255c19fe319c8d4e891163540382e9fbda99f394674f2a929efc47d57458",
+      "bytes": 54669,
+      "verified": true
+    },
+    {
+      "role": "rm",
+      "path": "/mnt/hezhisheng/su/experiment_handoff_v5/models/Skywork-Reward-V2-Llama-3.1-8B/config.json",
+      "sha256": "88109773c20f5977bf4ba73f7cb0ebd60c31f5e18503d35c5e4573cdf1ad1f64",
+      "bytes": 993,
+      "verified": true
+    },
+    {
+      "role": "rm",
+      "path": "/mnt/hezhisheng/su/experiment_handoff_v5/models/Skywork-Reward-V2-Llama-3.1-8B/model-00001-of-00004.safetensors",
+      "sha256": "26c9325aa462dd7f52765eed8d28718818869cb9401df390db4c8f2eaa0cb147",
+      "bytes": 4976698672,
+      "verified": true
+    },
+    {
+      "role": "rm",
+      "path": "/mnt/hezhisheng/su/experiment_handoff_v5/models/Skywork-Reward-V2-Llama-3.1-8B/model-00002-of-00004.safetensors",
+      "sha256": "ed58b66e8c22b3f7aed90b79cdd6b5423fbb1a8148415dba99a607cfc1d75b53",
+      "bytes": 4999802720,
+      "verified": true
+    },
+    {
+      "role": "rm",
+      "path": "/mnt/hezhisheng/su/experiment_handoff_v5/models/Skywork-Reward-V2-Llama-3.1-8B/model-00003-of-00004.safetensors",
+      "sha256": "c9ecd7c9cd6956a9f8020be76cb137e05abc654d5d5f48981ff33388fab30858",
+      "bytes": 4915916176,
+      "verified": true
+    },
+    {
+      "role": "rm",
+      "path": "/mnt/hezhisheng/su/experiment_handoff_v5/models/Skywork-Reward-V2-Llama-3.1-8B/model-00004-of-00004.safetensors",
+      "sha256": "45bc4da2a05a7536367f331ebc487faf6a2969baa1510eeff99e11b2994ce029",
+      "bytes": 117473824,
+      "verified": true
+    },
+    {
+      "role": "rm",
+      "path": "/mnt/hezhisheng/su/experiment_handoff_v5/models/Skywork-Reward-V2-Llama-3.1-8B/model.safetensors.index.json",
+      "sha256": "8a4b0b738cb0795eb1e248cd372e5448264cb3b90ab070a8785d12f022f6222c",
+      "bytes": 23948,
+      "verified": true
+    },
+    {
+      "role": "rm",
+      "path": "/mnt/hezhisheng/su/experiment_handoff_v5/models/Skywork-Reward-V2-Llama-3.1-8B/special_tokens_map.json",
+      "sha256": "f526dabe70ae46e1fb9caff406987c5e46a18f2c572906efa75b890e7833fb2a",
+      "bytes": 340,
+      "verified": true
+    },
+    {
+      "role": "rm",
+      "path": "/mnt/hezhisheng/su/experiment_handoff_v5/models/Skywork-Reward-V2-Llama-3.1-8B/tokenizer.json",
+      "sha256": "6b9e4e7fb171f92fd137b777cc2714bf87d11576700a1dcd7a399e7bbe39537b",
+      "bytes": 17209920,
+      "verified": true
+    },
+    {
+      "role": "rm",
+      "path": "/mnt/hezhisheng/su/experiment_handoff_v5/models/Skywork-Reward-V2-Llama-3.1-8B/tokenizer_config.json",
+      "sha256": "c7db026feb72501d1e343f2ebd704005ce1c2af6993ae9b44354fba30030a66b",
+      "bytes": 50565,
+      "verified": true
+    },
+    {
+      "role": "previous_model",
+      "config": "soft_dpo",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/outputs/soft_dpo/checkpoints_dpo/final_hf/model.safetensors",
+      "bytes": 2471645608,
+      "tensor_count": 146,
+      "modified_utc_timestamp": 1794302649.0,
+      "sha256": "2ea3f5287f2373803df4b719eecd8d0b1567f599d55c5ec7d2fb58eed46cb753",
+      "verified": true
+    },
+    {
+      "role": "previous_model",
+      "config": "oracle_soft_dpo",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/outputs/oracle_soft_dpo/checkpoints_dpo/final_hf/model.safetensors",
+      "bytes": 2471645608,
+      "tensor_count": 146,
+      "modified_utc_timestamp": 1794302650.0,
+      "sha256": "9be3c89c8d282d235cdac0245242c865ea4fcf8209b95cd250158108c7359152",
+      "verified": true
+    },
+    {
+      "role": "previous_model",
+      "config": "kl_dro_r0005",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/outputs/kl_dro_r0005/checkpoints_dpo/final_hf/model.safetensors",
+      "bytes": 2471645608,
+      "tensor_count": 146,
+      "modified_utc_timestamp": 1794303212.0,
+      "sha256": "5a280dfe474b9494cd81b07ce8e3b60bbfd24320fc54b6c98757ff1bdf2dbdb3",
+      "verified": true
+    },
+    {
+      "role": "previous_model",
+      "config": "kl_dro_r005",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/outputs/kl_dro_r005/checkpoints_dpo/final_hf/model.safetensors",
+      "bytes": 2471645608,
+      "tensor_count": 146,
+      "modified_utc_timestamp": 1794310909.0,
+      "sha256": "3300792d27e8044a377610b111ec92646a1eba76468db0823845ccf7848b1d19",
+      "verified": true
+    },
+    {
+      "role": "previous_model",
+      "config": "kl_dro_r01",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/outputs/kl_dro_r01/checkpoints_dpo/final_hf/model.safetensors",
+      "bytes": 2471645608,
+      "tensor_count": 146,
+      "modified_utc_timestamp": 1794303699.0,
+      "sha256": "4486d6d4da8a4f92849040055f49c8435b9e82098d568387c895f1ab3b9ec888",
+      "verified": true
+    },
+    {
+      "role": "previous_model",
+      "config": "kl_dro_r03",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/outputs/kl_dro_r03/checkpoints_dpo/final_hf/model.safetensors",
+      "bytes": 2471645608,
+      "tensor_count": 146,
+      "modified_utc_timestamp": 1794304632.0,
+      "sha256": "e828d5a18203374236f2dfd6269d1afc3cc458757009488447824a7663f737bf",
+      "verified": true
+    },
+    {
+      "role": "previous_model",
+      "config": "w1_dro_r001",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/outputs/w1_dro_r001/checkpoints_dpo/final_hf/model.safetensors",
+      "bytes": 2471645608,
+      "tensor_count": 146,
+      "modified_utc_timestamp": 1794305639.0,
+      "sha256": "c8bf3ddead1015d90f3e890b83749c745f7861da3dab5ebf26062863a187949a",
+      "verified": true
+    },
+    {
+      "role": "previous_model",
+      "config": "w1_dro_r005",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/outputs/w1_dro_r005/checkpoints_dpo/final_hf/model.safetensors",
+      "bytes": 2471645608,
+      "tensor_count": 146,
+      "modified_utc_timestamp": 1794306573.0,
+      "sha256": "49cd20053802399372e17c0749ff1249572ec36d7dd6823aa584518416d8ebcc",
+      "verified": true
+    },
+    {
+      "role": "previous_model",
+      "config": "w1_dro_r015",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/outputs/w1_dro_r015/checkpoints_dpo/final_hf/model.safetensors",
+      "bytes": 2471645608,
+      "tensor_count": 146,
+      "modified_utc_timestamp": 1794307536.0,
+      "sha256": "2d7b5401df83feceb5e7cfcc44b6e256cc1e1de0cf865bb5ee73dc365b63a61d",
+      "verified": true
+    },
+    {
+      "role": "previous_model",
+      "config": "w1_dro_r03",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/outputs/w1_dro_r03/checkpoints_dpo/final_hf/model.safetensors",
+      "bytes": 2471645608,
+      "tensor_count": 146,
+      "modified_utc_timestamp": 1794308489.0,
+      "sha256": "696c1585755f8cf9526c9d4498b00b26e16df27b622ff986bbb62b2608f48d48",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_dro_r0005/generations.jsonl",
+      "bytes": 13855818,
+      "sha256": "a851196ff7d2317055c146782aa0a60dc24a6c53bdefda9b6396bfda7555803d",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_dro_r0005/scored.jsonl",
+      "bytes": 14089691,
+      "sha256": "e2abf23255feb97a6ccb3a81db43a676699f75b61ce55e3868d75a652dd91046",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_dro_r005/generations.jsonl",
+      "bytes": 13777232,
+      "sha256": "5d79ac0f04aeb739919ea43000a9fd228e54fe37e7d9acb328243201e2b67d17",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_dro_r005/scored.jsonl",
+      "bytes": 14010960,
+      "sha256": "c4b53738870f99e9ac7ac9f0ec1ad9e8c977df175113b47c20be81b7eb868c6f",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_dro_r01/generations.jsonl",
+      "bytes": 13813952,
+      "sha256": "41b96f474dd2e42badaab249dccd90808fd36238b3d5bea5ac3541cffbd4a673",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_dro_r01/scored.jsonl",
+      "bytes": 14047916,
+      "sha256": "4850fe16ad9aab2fd5f8983d0cedcf0d9a6e4ef2bc6f24b31d31509c33b41d1c",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_dro_r03/generations.jsonl",
+      "bytes": 13886161,
+      "sha256": "9d004d4745cadd27fa7701f7c64c2c8a6049cd36d5c1f6eb3e35ff0b68c544a9",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_dro_r03/scored.jsonl",
+      "bytes": 14120237,
+      "sha256": "480a3b3c321a4fcb5875a1870fa4a2c6bf6438487abd3b21a81d9c22e3dd4920",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_tro_r0005_e0025/generations.jsonl",
+      "bytes": 13742294,
+      "sha256": "2fa5a58992bf87709015a41383db6893f04be0aef0df271de1c8a8819da6372b",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_tro_r0005_e0025/scored.jsonl",
+      "bytes": 13975993,
+      "sha256": "8cf675b25dbd58a285151fd674ffb976259fb7a1b709b998295b88375ddfe5de",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_tro_r0005_e005/generations.jsonl",
+      "bytes": 13855794,
+      "sha256": "609631c96b28e1cb9396fb90492b766f4fd9228986721e4ece2287b9d703355d",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_tro_r0005_e005/scored.jsonl",
+      "bytes": 14089693,
+      "sha256": "5132d2cff93a6de043cb2c9caf1ce93684ae020fb8afbd8d076cd379f22a20c1",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_tro_r0005_e01/generations.jsonl",
+      "bytes": 13839410,
+      "sha256": "873825592d49770f722be1f3cc21e672769a2d57cb94b1145570456d371e5a68",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_tro_r0005_e01/scored.jsonl",
+      "bytes": 14073333,
+      "sha256": "8f64d2b5849d0f07632df201813b9466f7e6b6aa65a64eda71a39e532ae0f5dd",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_tro_r005_e0025/generations.jsonl",
+      "bytes": 13857883,
+      "sha256": "1d78c9ec4ac9143d051ad6bbace6fa8ca5bbbe7fb15a471748368cfd860e0f8d",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_tro_r005_e0025/scored.jsonl",
+      "bytes": 14091643,
+      "sha256": "b91b6ec9aa8ae3f2070cfbaf8109aa7c97b6e3147d13f271f6e50111a17f95dd",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_tro_r005_e005/generations.jsonl",
+      "bytes": 13870664,
+      "sha256": "bc0a0204f4ff7098f9643bec1504af5f0b7dcc0ff77495c4bc276da949a6fe51",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_tro_r005_e005/scored.jsonl",
+      "bytes": 14104683,
+      "sha256": "6f177be5c103925b4655f3ca90ddaf696a3e98f208b64cd40f6ae49c9460819d",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_tro_r005_e01/generations.jsonl",
+      "bytes": 13838002,
+      "sha256": "5739280b1bd415c026ba1206ce102beaa3672e286b413a2ae853bcceac7ff21f",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_tro_r005_e01/scored.jsonl",
+      "bytes": 14072020,
+      "sha256": "fc10b9c1d86533e937dad4537a1dcf5ab383e0ac0828503a2d3f63baacc6369d",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_tro_r01_e0025/generations.jsonl",
+      "bytes": 13874214,
+      "sha256": "c0e8f1b42cee00e7b8851bed17cfc42b57f611a71cf469dadcf258287acef085",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_tro_r01_e0025/scored.jsonl",
+      "bytes": 14108129,
+      "sha256": "2cb3d2d575f11f4bb7041679677f231e56af9a05a0a468e1421fcfedd525b547",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_tro_r01_e005/generations.jsonl",
+      "bytes": 13795797,
+      "sha256": "ccfb056756a920d23c84369ecb65774a2b0360d2d5d6931d1dab74bd05ab0bf1",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_tro_r01_e005/scored.jsonl",
+      "bytes": 14029660,
+      "sha256": "f1c2e49e7fa30eb0f7d594927bc0c86ca97ee4b20246ff06c474c5212c04067f",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_tro_r01_e01/generations.jsonl",
+      "bytes": 13784353,
+      "sha256": "1fca3b2be416d1785412b9b49d792a4d73374d0bc874dbce84ac5677beb64a0a",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_tro_r01_e01/scored.jsonl",
+      "bytes": 14018114,
+      "sha256": "d48b3bbf98b8e9f67592f9934832d5586f7d7e02640b2db2539982b293966fd2",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_tro_r03_e0025/generations.jsonl",
+      "bytes": 13801971,
+      "sha256": "eb0921a859a87831e610cd536c62dd204f28e2e8ae589f60474bdf3322bfef84",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_tro_r03_e0025/scored.jsonl",
+      "bytes": 14035753,
+      "sha256": "416092e19b0e6970cf8696460b5dd85840708fef787c66b2a9c33da2bceaa96c",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_tro_r03_e005/generations.jsonl",
+      "bytes": 13852864,
+      "sha256": "8784e4d3d7fa4a42214ff5b150c57a03d5ef0890e4d22a104ed34d0f6d34f26f",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_tro_r03_e005/scored.jsonl",
+      "bytes": 14086769,
+      "sha256": "4a4df0f5e620d706736f714a993543f69d71c5c982be1c320e5106bbd4aa531d",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_tro_r03_e01/generations.jsonl",
+      "bytes": 13833171,
+      "sha256": "74b0ac8db00ff4f49e6f28cd97f31205ecd6cc6c4a75c9735a910d684c175a12",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/kl_tro_r03_e01/scored.jsonl",
+      "bytes": 14066914,
+      "sha256": "63636c89a370cc62219ea510360ce9d6485da826bb8ebf899010ca8ae605ba8e",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/oracle_soft_dpo/generations.jsonl",
+      "bytes": 13763202,
+      "sha256": "06e0e3fd9aa6a1cce10f5415d6b824226b89c9056aef7b08d2fcd84299e84794",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/oracle_soft_dpo/scored.jsonl",
+      "bytes": 13997153,
+      "sha256": "42b5042b01fa8bd0d5b71b5948bff424972e3b3c9d044c0fba44a4fc63aafa37",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/soft_dpo/generations.jsonl",
+      "bytes": 13841278,
+      "sha256": "d7e92f064bb1c1e48aa6c5e97dfa908af6c5753ca5357d20f822d1539b0c4ce4",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/soft_dpo/scored.jsonl",
+      "bytes": 14075200,
+      "sha256": "16e80d7d727857e7b83bd57f293fa31ac6747ad0367b0807b3920aa56362674b",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_dro_r001/generations.jsonl",
+      "bytes": 13823989,
+      "sha256": "1c3fd5af2238550d69ffe1db4bf99776b9199cd21936fb0ff34d922a17259c48",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_dro_r001/scored.jsonl",
+      "bytes": 14058004,
+      "sha256": "72915b3f1b92e6f0a727078d2eef3e17e98cd4193a96c7eb013dc3a7a6bb0e2a",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_dro_r005/generations.jsonl",
+      "bytes": 13792723,
+      "sha256": "abc267a6b644cc595c6f992441e1a990c100557f4c1f31360520835c1910c17c",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_dro_r005/scored.jsonl",
+      "bytes": 14026592,
+      "sha256": "23886b24fc1ecad68aaf2c9ed7e27491a742c99e656b98166285a2290cafa45f",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_dro_r015/generations.jsonl",
+      "bytes": 13861172,
+      "sha256": "4362a0f84053f8119c3ae037f273c46dd90daa9704167bbdc969d6626faad8e3",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_dro_r015/scored.jsonl",
+      "bytes": 14095012,
+      "sha256": "6cc2ce31ecd10865bfe7859f96b7c7040dc4a6abe4dfeecffe564a5688af9175",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_dro_r03/generations.jsonl",
+      "bytes": 13833567,
+      "sha256": "ed92dfd37c47172197f63ea4ac9ee0b17e4fc89e8eddaa8db881acd84452b17f",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_dro_r03/scored.jsonl",
+      "bytes": 14067475,
+      "sha256": "3db0391e5f3ce4731122901c5912d8c58b50a31fc13ac5843d3b7c6e1a24c7ec",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_tro_r001_e0025/generations.jsonl",
+      "bytes": 13808533,
+      "sha256": "f100d83ee514f25d5cdef53703a57a537877e21545fc538625d941c19447ab15",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_tro_r001_e0025/scored.jsonl",
+      "bytes": 14042308,
+      "sha256": "b06fe2d4a4d2fd415cfc31d64e5d37d58fd11608347ee83e394079009554255f",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_tro_r001_e005/generations.jsonl",
+      "bytes": 13864785,
+      "sha256": "6dd9ebbcf7d3794f34f4216e5c0b40911e93539aae48c9ed31ede3e2673c84d4",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_tro_r001_e005/scored.jsonl",
+      "bytes": 14098720,
+      "sha256": "8b8e6c86444e574c602e633f096c1ac6e75e51d9b099564266eb94454da71a42",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_tro_r001_e01/generations.jsonl",
+      "bytes": 13857197,
+      "sha256": "32db129bfdd96e15535e7456fc71b93db9acf716f1af04965d71aedf6c3b84fe",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_tro_r001_e01/scored.jsonl",
+      "bytes": 14091024,
+      "sha256": "b7b306007a0ee70ac147ec9260558ce1d0e1ca85b56f1777f497552063a69295",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_tro_r005_e0025/generations.jsonl",
+      "bytes": 13768284,
+      "sha256": "a641cf43e24b3b8f2726e456295273eda3f6681de0d9cc70156cc940cae50930",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_tro_r005_e0025/scored.jsonl",
+      "bytes": 14002414,
+      "sha256": "006326bba17d4144e62e8b4576cfe7f8ee95134a33dd3c95221abdee8822c7eb",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_tro_r005_e005/generations.jsonl",
+      "bytes": 13851718,
+      "sha256": "52944190560f9e17afd498244f5f22cca26d2231cf60386830c7c0f7b7aa6a86",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_tro_r005_e005/scored.jsonl",
+      "bytes": 14085723,
+      "sha256": "8db4da4e43e223ca1155f735e012d11ee254ace7480a62487d375ae70c8d2424",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_tro_r005_e01/generations.jsonl",
+      "bytes": 13837259,
+      "sha256": "2f1c7c0178e96160b03c2e05d3d1a29af838ed9a625734ceb160b6545aaefc45",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_tro_r005_e01/scored.jsonl",
+      "bytes": 14071183,
+      "sha256": "93e5a9d834d4129f9a535c497488ac6933ace752e7851409c9bc99246e60b9f7",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_tro_r015_e0025/generations.jsonl",
+      "bytes": 13862253,
+      "sha256": "7c5537c93185e7c5e716371fd9945d70ff6454d0330d48544b38ce706e3005b0",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_tro_r015_e0025/scored.jsonl",
+      "bytes": 14096060,
+      "sha256": "e527e3433a7bb00e778d65e983b55bedb7b628164df98f7b006d8d692d27fb21",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_tro_r015_e005/generations.jsonl",
+      "bytes": 13833071,
+      "sha256": "37fef664b701db400c5fa09d2149c6b22dba45fb8543719fb960b5e1a52018b5",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_tro_r015_e005/scored.jsonl",
+      "bytes": 14066939,
+      "sha256": "634e4207bb063a44b558ee3a625f32d88d3874dd63e9b02f5ec29e558344a3e6",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_tro_r015_e01/generations.jsonl",
+      "bytes": 13820163,
+      "sha256": "b583307d79539fa0bce39bcc9f7fbe5fc6540edea1e3a93ba51ea599374d7365",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_tro_r015_e01/scored.jsonl",
+      "bytes": 14054019,
+      "sha256": "8b3c53b19089b1d70075f0693f7c4dadde760643a7636778eac49c9bfc98d691",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_tro_r03_e0025/generations.jsonl",
+      "bytes": 13862716,
+      "sha256": "fb79ec4480815a9e861f6ce0b55387d8540c5f2ba189d37e04db67df3dea4f6e",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_tro_r03_e0025/scored.jsonl",
+      "bytes": 14096524,
+      "sha256": "12150af8745faadb764900bfc328e095f641a407a8f58d73cc35a05640f95637",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_tro_r03_e005/generations.jsonl",
+      "bytes": 13812192,
+      "sha256": "25c21d0af88d703b9c2dc3949e88f22b92496514317a6e4fdbd0cc1043a8096d",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_tro_r03_e005/scored.jsonl",
+      "bytes": 14045999,
+      "sha256": "44b21ea018ab84e5d128896ae9583007f2e63a0aeb3ad740c33a2e14b93d3fac",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_tro_r03_e01/generations.jsonl",
+      "bytes": 13865634,
+      "sha256": "6f630d915fc757a06bb4347a40d099c4b197da9861ec7145fc39cbaba46bbfda",
+      "verified": true
+    },
+    {
+      "role": "previous_evaluation",
+      "path": "/mnt/hezhisheng/su/experiment_v7_20261110/eval/w1_tro_r03_e01/scored.jsonl",
+      "bytes": 14099440,
+      "sha256": "18c5c354a60afdb0bfa5631086de88684bd04e4879852ed773d3a11878eb2ab5",
+      "verified": true
+    }
+  ],
+  "note": "Initial policy/RM/tokenizers, exact training/evaluation source, 10 reused baseline exports and all 34 generated/scored files match archived SHA256."
+}

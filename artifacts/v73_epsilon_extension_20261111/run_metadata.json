@@ -1,0 +1,75 @@
+{
+  "protocol_repo_commit": "33136d47511f477cc0189a82c1e25ae98e805a71",
+  "protocol_repo": "https://github.com/qingyunqingyun/DPO_TRO_experiment",
+  "source_repo_commit": "d6dc68bbaaa51c60b7d1b6ccd991fc6fbc72de4e",
+  "policy": "Llama-3.2-1B-Instruct local Llama1b",
+  "reward_model": "Skywork/Skywork-Reward-V2-Llama-3.1-8B local frozen copy",
+  "train_pairs": 2000,
+  "dev_pairs": 500,
+  "epochs": 2,
+  "effective_batch_size": 128,
+  "allocation_seed": 1731,
+  "vote_seed": 2101,
+  "eval_samples_per_prompt": 10,
+  "configs": 16,
+  "source_worktree_dirty": true,
+  "implementation_note": "Base git commit is insufficient: TRO files were untracked and actor/train_alignment modified before this run. Exact executed source files are frozen under audit/ with hashes; source_changes_relative_to_base.patch covers tracked changes.",
+  "actual_prior": {
+    "a0": 0.5,
+    "b0": 0.5
+  },
+  "kl_direction": "KL(Ber(h)||Ber(p))",
+  "w1_transport_cost": 1,
+  "actual_generation_seed": 2101,
+  "status": "completed",
+  "finished_scoring_utc": "2026-11-11T10:12:59+00:00",
+  "timing": {
+    "started_utc": "2026-11-11T07:07:18.661494+00:00",
+    "last_model_utc": "2026-11-11T09:47:56+00:00",
+    "last_scoring_utc": "2026-11-11T10:12:59+00:00",
+    "wall_hours": 3.094538473950492
+  },
+  "oracle_temperature": 9.2548828125,
+  "training": {
+    "epochs": 2,
+    "dp_world_size": 2,
+    "microbatch_pairs_per_rank": 1,
+    "gradient_accumulation": 64,
+    "effective_batch_pairs": 128,
+    "optimizer_updates": 31,
+    "scheduler_planned_updates": 30,
+    "final_uncommitted_pairs": 32
+  },
+  "hashes": {
+    "input": "audit/input_and_math_checks.json",
+    "initial_models_and_tokenizers": "audit/initial_model_hashes.json",
+    "trained_models": "audit/model_exports.json",
+    "scores": "audit/eval_checks.json"
+  },
+  "checks": {
+    "inputs_and_math": "audit/input_and_math_checks.json",
+    "trainer": "audit/trainer_loss_checks.json",
+    "eval": "audit/eval_checks.json"
+  },
+  "complete_configs": 16,
+  "scored_generations": 80000,
+  "protocol_version": "2026-11-11-v7.3-epsilon-extension",
+  "prepared_utc": "2026-11-11T07:05:08.505779+00:00",
+  "previous_batch": "/mnt/hezhisheng/su/experiment_v7_20261110",
+  "planned_scored_generations": 80000,
+  "extension_epsilon": [
+    0.15,
+    0.2
+  ],
+  "training_behavior": "Verified archived trainer behavior: 31 optimizer updates, scheduler planned 30; final 32 pair gradients uncommitted. See audit/training_budget_checks.json.",
+  "started_utc": "2026-11-11T07:07:18.388602+00:00",
+  "pipeline_pid": 1241507,
+  "gpu_assignment": {
+    "training": [
+      5,
+      7
+    ],
+    "evaluation": 4
+  },
+  "archival_note": "Results, source and audit records are archived in this directory. Added original model hashes and source patch from the unchanged v7.2 implementation for complete provenance. Model weights and optimizer checkpoints remain on shared storage."
+}

@@ -1,0 +1,259 @@
+{
+  "updated_utc": "2026-11-11T10:14:24.036402+00:00",
+  "pid": 1241507,
+  "configs": [
+    {
+      "name": "kl_tro_r0005_e015",
+      "training": "completed",
+      "evaluation": "completed",
+      "train_attempt": 1,
+      "train_gpus": [
+        5,
+        7
+      ],
+      "updated_utc": "2026-11-11T07:29:34.936822+00:00",
+      "checkpoint": "/mnt/hezhisheng/su/experiment_v73_20261111/outputs/kl_tro_r0005_e015/checkpoints_dpo/final_hf",
+      "eval_attempt": 1,
+      "eval_gpu": 4,
+      "scored_samples": 5000
+    },
+    {
+      "name": "kl_tro_r0005_e02",
+      "training": "completed",
+      "evaluation": "completed",
+      "train_attempt": 1,
+      "train_gpus": [
+        5,
+        7
+      ],
+      "updated_utc": "2026-11-11T07:41:50.853822+00:00",
+      "checkpoint": "/mnt/hezhisheng/su/experiment_v73_20261111/outputs/kl_tro_r0005_e02/checkpoints_dpo/final_hf",
+      "eval_attempt": 1,
+      "eval_gpu": 4,
+      "scored_samples": 5000
+    },
+    {
+      "name": "kl_tro_r005_e015",
+      "training": "completed",
+      "evaluation": "completed",
+      "train_attempt": 1,
+      "train_gpus": [
+        5,
+        7
+      ],
+      "updated_utc": "2026-11-11T07:55:25.605354+00:00",
+      "checkpoint": "/mnt/hezhisheng/su/experiment_v73_20261111/outputs/kl_tro_r005_e015/checkpoints_dpo/final_hf",
+      "eval_attempt": 1,
+      "eval_gpu": 4,
+      "scored_samples": 5000
+    },
+    {
+      "name": "kl_tro_r005_e02",
+      "training": "completed",
+      "evaluation": "completed",
+      "train_attempt": 1,
+      "train_gpus": [
+        5,
+        7
+      ],
+      "updated_utc": "2026-11-11T08:07:01.977716+00:00",
+      "checkpoint": "/mnt/hezhisheng/su/experiment_v73_20261111/outputs/kl_tro_r005_e02/checkpoints_dpo/final_hf",
+      "eval_attempt": 1,
+      "eval_gpu": 4,
+      "scored_samples": 5000
+    },
+    {
+      "name": "kl_tro_r01_e015",
+      "training": "completed",
+      "evaluation": "completed",
+      "train_attempt": 1,
+      "train_gpus": [
+        5,
+        7
+      ],
+      "updated_utc": "2026-11-11T08:20:20.603607+00:00",
+      "checkpoint": "/mnt/hezhisheng/su/experiment_v73_20261111/outputs/kl_tro_r01_e015/checkpoints_dpo/final_hf",
+      "eval_attempt": 1,
+      "eval_gpu": 4,
+      "scored_samples": 5000
+    },
+    {
+      "name": "kl_tro_r01_e02",
+      "training": "completed",
+      "evaluation": "completed",
+      "train_attempt": 1,
+      "train_gpus": [
+        5,
+        7
+      ],
+      "updated_utc": "2026-11-11T08:32:49.407109+00:00",
+      "checkpoint": "/mnt/hezhisheng/su/experiment_v73_20261111/outputs/kl_tro_r01_e02/checkpoints_dpo/final_hf",
+      "eval_attempt": 1,
+      "eval_gpu": 4,
+      "scored_samples": 5000
+    },
+    {
+      "name": "kl_tro_r03_e015",
+      "training": "completed",
+      "evaluation": "completed",
+      "train_attempt": 1,
+      "train_gpus": [
+        5,
+        7
+      ],
+      "updated_utc": "2026-11-11T08:47:22.393477+00:00",
+      "checkpoint": "/mnt/hezhisheng/su/experiment_v73_20261111/outputs/kl_tro_r03_e015/checkpoints_dpo/final_hf",
+      "eval_attempt": 1,
+      "eval_gpu": 4,
+      "scored_samples": 5000
+    },
+    {
+      "name": "kl_tro_r03_e02",
+      "training": "completed",
+      "evaluation": "completed",
+      "train_attempt": 1,
+      "train_gpus": [
+        5,
+        7
+      ],
+      "updated_utc": "2026-11-11T09:00:27.934464+00:00",
+      "checkpoint": "/mnt/hezhisheng/su/experiment_v73_20261111/outputs/kl_tro_r03_e02/checkpoints_dpo/final_hf",
+      "eval_attempt": 2,
+      "eval_gpu": 4,
+      "eval_failure": {
+        "name": "kl_tro_r03_e02",
+        "generation": "/mnt/hezhisheng/su/experiment_v73_20261111/eval/kl_tro_r03_e02/generations.jsonl",
+        "scored": "/mnt/hezhisheng/su/experiment_v73_20261111/eval/kl_tro_r03_e02/scored.jsonl",
+        "complete": false,
+        "failed_stage": "generation",
+        "returncode": 1
+      },
+      "scored_samples": 5000
+    },
+    {
+      "name": "w1_tro_r001_e015",
+      "training": "completed",
+      "evaluation": "completed",
+      "train_attempt": 1,
+      "train_gpus": [
+        5,
+        7
+      ],
+      "updated_utc": "2026-11-11T09:12:16.511789+00:00",
+      "checkpoint": "/mnt/hezhisheng/su/experiment_v73_20261111/outputs/w1_tro_r001_e015/checkpoints_dpo/final_hf",
+      "eval_attempt": 1,
+      "eval_gpu": 4,
+      "scored_samples": 5000
+    },
+    {
+      "name": "w1_tro_r001_e02",
+      "training": "completed",
+      "evaluation": "completed",
+      "train_attempt": 1,
+      "train_gpus": [
+        5,
+        7
+      ],
+      "updated_utc": "2026-11-11T09:22:17.907539+00:00",
+      "checkpoint": "/mnt/hezhisheng/su/experiment_v73_20261111/outputs/w1_tro_r001_e02/checkpoints_dpo/final_hf",
+      "eval_attempt": 1,
+      "eval_gpu": 4,
+      "scored_samples": 5000
+    },
+    {
+      "name": "w1_tro_r005_e015",
+      "training": "completed",
+      "evaluation": "completed",
+      "train_attempt": 1,
+      "train_gpus": [
+        5,
+        7
+      ],
+      "updated_utc": "2026-11-11T09:32:15.371530+00:00",
+      "checkpoint": "/mnt/hezhisheng/su/experiment_v73_20261111/outputs/w1_tro_r005_e015/checkpoints_dpo/final_hf",
+      "eval_attempt": 1,
+      "eval_gpu": 4,
+      "scored_samples": 5000
+    },
+    {
+      "name": "w1_tro_r005_e02",
+      "training": "completed",
+      "evaluation": "completed",
+      "train_attempt": 1,
+      "train_gpus": [
+        5,
+        7
+      ],
+      "updated_utc": "2026-11-11T09:39:15.829152+00:00",
+      "checkpoint": "/mnt/hezhisheng/su/experiment_v73_20261111/outputs/w1_tro_r005_e02/checkpoints_dpo/final_hf",
+      "eval_attempt": 1,
+      "eval_gpu": 4,
+      "scored_samples": 5000
+    },
+    {
+      "name": "w1_tro_r015_e015",
+      "training": "completed",
+      "evaluation": "completed",
+      "train_attempt": 1,
+      "train_gpus": [
+        5,
+        7
+      ],
+      "updated_utc": "2026-11-11T09:47:04.941274+00:00",
+      "checkpoint": "/mnt/hezhisheng/su/experiment_v73_20261111/outputs/w1_tro_r015_e015/checkpoints_dpo/final_hf",
+      "eval_attempt": 1,
+      "eval_gpu": 4,
+      "scored_samples": 5000
+    },
+    {
+      "name": "w1_tro_r015_e02",
+      "training": "completed",
+      "evaluation": "completed",
+      "train_attempt": 1,
+      "train_gpus": [
+        5,
+        7
+      ],
+      "updated_utc": "2026-11-11T09:55:11.699317+00:00",
+      "checkpoint": "/mnt/hezhisheng/su/experiment_v73_20261111/outputs/w1_tro_r015_e02/checkpoints_dpo/final_hf",
+      "eval_attempt": 1,
+      "eval_gpu": 4,
+      "scored_samples": 5000
+    },
+    {
+      "name": "w1_tro_r03_e015",
+      "training": "completed",
+      "evaluation": "completed",
+      "train_attempt": 1,
+      "train_gpus": [
+        5,
+        7
+      ],
+      "updated_utc": "2026-11-11T10:04:03.891989+00:00",
+      "checkpoint": "/mnt/hezhisheng/su/experiment_v73_20261111/outputs/w1_tro_r03_e015/checkpoints_dpo/final_hf",
+      "eval_attempt": 1,
+      "eval_gpu": 4,
+      "scored_samples": 5000
+    },
+    {
+      "name": "w1_tro_r03_e02",
+      "training": "completed",
+      "evaluation": "completed",
+      "train_attempt": 1,
+      "train_gpus": [
+        5,
+        7
+      ],
+      "updated_utc": "2026-11-11T10:13:00.228060+00:00",
+      "checkpoint": "/mnt/hezhisheng/su/experiment_v73_20261111/outputs/w1_tro_r03_e02/checkpoints_dpo/final_hf",
+      "eval_attempt": 1,
+      "eval_gpu": 4,
+      "scored_samples": 5000
+    },
+    {
+      "name": "_analysis",
+      "analysis": "completed",
+      "updated_utc": "2026-11-11T10:14:24.036352+00:00"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "fixture_directory": "/tmp/v73-analysis-check-r_llrq6a",
+  "scope": "End-to-end report, full RM input audit, bootstrap, model/log checks, 16/50 and 32/80 tables, plots and local publish tested using 16 old distinct completed runs. Fixture metrics are not extension results.",
+  "no_fixture_written_to_actual_experiment": true
+}

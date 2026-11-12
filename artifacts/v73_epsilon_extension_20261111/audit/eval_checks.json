@@ -1,0 +1,204 @@
+{
+  "status": "passed",
+  "configs": 16,
+  "total_samples": 80000,
+  "all_rewards_finite": true,
+  "all_sample_ids_unique": true,
+  "rm_truncated_samples": 0,
+  "max_rm_tokens": 2037,
+  "files": {
+    "kl_tro_r0005_e015": {
+      "scored": {
+        "path": "/mnt/hezhisheng/su/experiment_v73_20261111/eval/kl_tro_r0005_e015/scored.jsonl",
+        "bytes": 14087054,
+        "sha256": "483b0e1e3e42a0e8702eb0a05f20552ea33d3de62cea8165fa628aab9d2f972c"
+      },
+      "generations": {
+        "path": "/mnt/hezhisheng/su/experiment_v73_20261111/eval/kl_tro_r0005_e015/generations.jsonl",
+        "bytes": 13853108,
+        "sha256": "26a4b299c8d739e500f7bbd6309587f1798169a97fbcc3f355be337fe030e772"
+      }
+    },
+    "kl_tro_r0005_e02": {
+      "scored": {
+        "path": "/mnt/hezhisheng/su/experiment_v73_20261111/eval/kl_tro_r0005_e02/scored.jsonl",
+        "bytes": 14080355,
+        "sha256": "c94a316fd1edd5fb11c0c2725f1052c7704109f18b5a649f6fd3e4c789babf54"
+      },
+      "generations": {
+        "path": "/mnt/hezhisheng/su/experiment_v73_20261111/eval/kl_tro_r0005_e02/generations.jsonl",
+        "bytes": 13846562,
+        "sha256": "ab05d50e6f53fd9e4f14643ae73e6086bd1ee53d7b3433c0aeb110faac1ece4d"
+      }
+    },
+    "kl_tro_r005_e015": {
+      "scored": {
+        "path": "/mnt/hezhisheng/su/experiment_v73_20261111/eval/kl_tro_r005_e015/scored.jsonl",
+        "bytes": 14106209,
+        "sha256": "4c6279a863eb8cc27afdfb9b27c4e0e58505b04de3522e329daf0502d4f33d92"
+      },
+      "generations": {
+        "path": "/mnt/hezhisheng/su/experiment_v73_20261111/eval/kl_tro_r005_e015/generations.jsonl",
+        "bytes": 13872296,
+        "sha256": "930983e70a271fd8a83dbfd98b6c9aed38aa25be07656880c7aa733d80a2cd14"
+      }
+    },
+    "kl_tro_r005_e02": {
+      "scored": {
+        "path": "/mnt/hezhisheng/su/experiment_v73_20261111/eval/kl_tro_r005_e02/scored.jsonl",
+        "bytes": 14079051,
+        "sha256": "67954a22001bcbaa0869727e64e6ea56dd4e5a1e06ce94739b70b989b010b1d8"
+      },
+      "generations": {
+        "path": "/mnt/hezhisheng/su/experiment_v73_20261111/eval/kl_tro_r005_e02/generations.jsonl",
+        "bytes": 13845187,
+        "sha256": "940f5b1e9791372fee355725498a376dd9f0fab0bb940480a315380673fb4c64"
+      }
+    },
+    "kl_tro_r01_e015": {
+      "scored": {
+        "path": "/mnt/hezhisheng/su/experiment_v73_20261111/eval/kl_tro_r01_e015/scored.jsonl",
+        "bytes": 14035622,
+        "sha256": "0e4eefbcc15cce90f2bdbc5d1deb7402e59dcbd5573c25df48bb86620fa0fe12"
+      },
+      "generations": {
+        "path": "/mnt/hezhisheng/su/experiment_v73_20261111/eval/kl_tro_r01_e015/generations.jsonl",
+        "bytes": 13801646,
+        "sha256": "8671fb3ee784acfc3bf3db24948ed2d2719907aba7913ec71a1edcd2b6465d37"
+      }
+    },
+    "kl_tro_r01_e02": {
+      "scored": {
+        "path": "/mnt/hezhisheng/su/experiment_v73_20261111/eval/kl_tro_r01_e02/scored.jsonl",
+        "bytes": 13977293,
+        "sha256": "880babf0196eac7d8959e6ee39676bd257cca0ff449f01d202a1264b2bd9b1df"
+      },
+      "generations": {
+        "path": "/mnt/hezhisheng/su/experiment_v73_20261111/eval/kl_tro_r01_e02/generations.jsonl",
+        "bytes": 13743372,
+        "sha256": "dede8e1c4b7874aa3e24c92becd0f92c736118e3edb37f1fcbe4d6f870127f9a"
+      }
+    },
+    "kl_tro_r03_e015": {
+      "scored": {
+        "path": "/mnt/hezhisheng/su/experiment_v73_20261111/eval/kl_tro_r03_e015/scored.jsonl",
+        "bytes": 14062711,
+        "sha256": "add61121828af701d1aa3ade5643eda1f78b21898c47acbeb51b7b585e53deea"
+      },
+      "generations": {
+        "path": "/mnt/hezhisheng/su/experiment_v73_20261111/eval/kl_tro_r03_e015/generations.jsonl",
+        "bytes": 13828899,
+        "sha256": "c6fe808363b694c56512d849fdc5c8f0e95aa3dcb53b6bc8490b726b51ec217f"
+      }
+    },
+    "kl_tro_r03_e02": {
+      "scored": {
+        "path": "/mnt/hezhisheng/su/experiment_v73_20261111/eval/kl_tro_r03_e02/scored.jsonl",
+        "bytes": 14055020,
+        "sha256": "9e5743f78a7997bfe36355aba3df8864eded6b69198d525d546cdc0f249d126b"
+      },
+      "generations": {
+        "path": "/mnt/hezhisheng/su/experiment_v73_20261111/eval/kl_tro_r03_e02/generations.jsonl",
+        "bytes": 13821197,
+        "sha256": "68effe335e09bd7cb91c31506f9f005b6a6eb0f8d075c7d759ade208a959ab53"
+      }
+    },
+    "w1_tro_r001_e015": {
+      "scored": {
+        "path": "/mnt/hezhisheng/su/experiment_v73_20261111/eval/w1_tro_r001_e015/scored.jsonl",
+        "bytes": 14049885,
+        "sha256": "e9c589f229bf6faeec84e22e8c3f43d30e3181ada294164aed9ab5c256a827e6"
+      },
+      "generations": {
+        "path": "/mnt/hezhisheng/su/experiment_v73_20261111/eval/w1_tro_r001_e015/generations.jsonl",
+        "bytes": 13815982,
+        "sha256": "5066058c0da47beb0189eeacb2c08ce3ece955b79afdb8a081d68916cbf746ab"
+      }
+    },
+    "w1_tro_r001_e02": {
+      "scored": {
+        "path": "/mnt/hezhisheng/su/experiment_v73_20261111/eval/w1_tro_r001_e02/scored.jsonl",
+        "bytes": 14048462,
+        "sha256": "293bdaf83d1f13b6ef9263af2edacf7c683cdd732f97b91ee0b8af143fc294c7"
+      },
+      "generations": {
+        "path": "/mnt/hezhisheng/su/experiment_v73_20261111/eval/w1_tro_r001_e02/generations.jsonl",
+        "bytes": 13814543,
+        "sha256": "bc3d96b6b664845f3be4b7f795a05915a2efb9dab4f7d29d69ba889397d8c2be"
+      }
+    },
+    "w1_tro_r005_e015": {
+      "scored": {
+        "path": "/mnt/hezhisheng/su/experiment_v73_20261111/eval/w1_tro_r005_e015/scored.jsonl",
+        "bytes": 14075555,
+        "sha256": "1ea222a359f9bbad63bb0be1dcf22e2171e22580e6b1111b1291c7a429b8f8d8"
+      },
+      "generations": {
+        "path": "/mnt/hezhisheng/su/experiment_v73_20261111/eval/w1_tro_r005_e015/generations.jsonl",
+        "bytes": 13841648,
+        "sha256": "df9a526bc7a9edceeb89d2691999967ba63dd7051d62cf3b204594307872d158"
+      }
+    },
+    "w1_tro_r005_e02": {
+      "scored": {
+        "path": "/mnt/hezhisheng/su/experiment_v73_20261111/eval/w1_tro_r005_e02/scored.jsonl",
+        "bytes": 14016924,
+        "sha256": "167fae8a01d27eb3e4b78727f0e0e052083c5f4b36226004922fb495413d2b6d"
+      },
+      "generations": {
+        "path": "/mnt/hezhisheng/su/experiment_v73_20261111/eval/w1_tro_r005_e02/generations.jsonl",
+        "bytes": 13783020,
+        "sha256": "fea8c78d1a38721010bd709185decb9608611ccecda1cd8736a356e98e9565cd"
+      }
+    },
+    "w1_tro_r015_e015": {
+      "scored": {
+        "path": "/mnt/hezhisheng/su/experiment_v73_20261111/eval/w1_tro_r015_e015/scored.jsonl",
+        "bytes": 14116308,
+        "sha256": "ea12a3ef9b196e18ba2841c641856d99990cdb08992e036036e97656f6654f2e"
+      },
+      "generations": {
+        "path": "/mnt/hezhisheng/su/experiment_v73_20261111/eval/w1_tro_r015_e015/generations.jsonl",
+        "bytes": 13882416,
+        "sha256": "8f61f7621fbbdb792a54f0e821c6e3d32aedd23194d04fadc06e0874324059ea"
+      }
+    },
+    "w1_tro_r015_e02": {
+      "scored": {
+        "path": "/mnt/hezhisheng/su/experiment_v73_20261111/eval/w1_tro_r015_e02/scored.jsonl",
+        "bytes": 14060358,
+        "sha256": "e748fac838041501f51241ab6ac3d285eb2c190157b7c5902960a85bdc160f5c"
+      },
+      "generations": {
+        "path": "/mnt/hezhisheng/su/experiment_v73_20261111/eval/w1_tro_r015_e02/generations.jsonl",
+        "bytes": 13826461,
+        "sha256": "b301d7acfc458a400a47a21da2665506e8cdb52ab0567a447b38b9a079b50419"
+      }
+    },
+    "w1_tro_r03_e015": {
+      "scored": {
+        "path": "/mnt/hezhisheng/su/experiment_v73_20261111/eval/w1_tro_r03_e015/scored.jsonl",
+        "bytes": 14018919,
+        "sha256": "3ce96195ee54af123965cf2e06cae033af04f12cf3173dded88370253c35b1f1"
+      },
+      "generations": {
+        "path": "/mnt/hezhisheng/su/experiment_v73_20261111/eval/w1_tro_r03_e015/generations.jsonl",
+        "bytes": 13784992,
+        "sha256": "aae0d4edf321702c847418106358a2b3edd7bfac0ffcee059aa66ab20afd4e05"
+      }
+    },
+    "w1_tro_r03_e02": {
+      "scored": {
+        "path": "/mnt/hezhisheng/su/experiment_v73_20261111/eval/w1_tro_r03_e02/scored.jsonl",
+        "bytes": 14052085,
+        "sha256": "9ece891ee88de19bb406c4cc25c86784170e847845efaca17c61fee428677af8"
+      },
+      "generations": {
+        "path": "/mnt/hezhisheng/su/experiment_v73_20261111/eval/w1_tro_r03_e02/generations.jsonl",
+        "bytes": 13818053,
+        "sha256": "da6e329d7c3b7c7be560bace195e44d709e1cd720668fd800444467ed21a9225"
+      }
+    }
+  },
+  "old_metrics_reproduced": true
+}

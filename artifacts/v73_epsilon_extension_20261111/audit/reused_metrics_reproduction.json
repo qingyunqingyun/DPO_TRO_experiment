@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "configs": 34,
+  "bootstrap": 2000,
+  "seed": 601,
+  "reward_shortfall_and_ci_tolerance": 1e-12
+}
