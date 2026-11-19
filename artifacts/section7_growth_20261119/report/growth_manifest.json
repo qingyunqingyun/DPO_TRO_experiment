@@ -1,0 +1,56 @@
+{
+  "evaluation_split": "test_diagnostic",
+  "evaluation_pairs_path": "/mnt/hezhisheng/su/1030-lastest/experiment_handoff_v5/data/pairs/test_diagnostic.jsonl",
+  "evaluation_pairs_sha256": "d63bea43050c04cd1007d26287a4e9f60d77037b7b619c79224137aa28e6e6dd",
+  "prompt_count": 500,
+  "responses_per_prompt": 10,
+  "Ns": [
+    1,
+    5,
+    11,
+    51,
+    101
+  ],
+  "repeats": [
+    1,
+    2,
+    3
+  ],
+  "generation": {
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "max_new_tokens": 1024,
+    "context": 4096,
+    "seeds": {
+      "1": 401,
+      "2": 402,
+      "3": 403
+    }
+  },
+  "rm": {
+    "path": "/mnt/hezhisheng/su/experiment_handoff_v5/models/Skywork-Reward-V2-Llama-3.1-8B",
+    "max_length": 16384,
+    "batch_size": 2,
+    "batch_size_by_repeat": {
+      "r1": 2,
+      "r2": 2,
+      "r3": 1
+    },
+    "device_by_repeat": {
+      "r1": "GPU0",
+      "r2": "GPU0",
+      "r3": "GPU6"
+    }
+  },
+  "definitions": {
+    "R": "mean of prompt-level means over 500 prompts",
+    "S_O": "mean over prompts of max(oracle_prompt_mean - method_prompt_mean, 0)"
+  },
+  "files": {
+    "growth_results_complete.csv": "558d6541c3dfebbf50c710d3759b31133d81c73b50d67ef594bd47166e438056",
+    "growth_prompt_metrics.csv": "4811aefe3624cba9979224bf0f8993626b0654f99d636411eeb081ff977da386",
+    "growth_results_by_N.csv": "3edc52d4ca872cf45eeca84d9dfca005be6fe13ba169bbb1ea154ed601f84c7d"
+  },
+  "evaluation_split_note": "test_diagnostic is the frozen 500-prompt evaluation split available in the v5 handoff; it is retained as the historical diagnostic/test split and is reported as such.",
+  "execution_note": "GPU0 became externally full during r3 scoring; r3 used the same RM/model/decoding and batch=1 on GPU6. No generation rerun."
+}

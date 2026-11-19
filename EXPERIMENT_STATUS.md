@@ -1,6 +1,6 @@
 # 实验状态与执行回传
 
-更新日期：2026-11-12
+更新日期：2026-11-19
 
 当前纲要：[2026-11-11-v7.3-epsilon-extension](EXPERIMENT_PROTOCOL.md)
 
@@ -93,3 +93,35 @@
 新增批次平均奖励最高为 `w1_tro_r015_e02`：R=4.825278；短缺最小为 `kl_tro_r005_e015`：S_O=0.940412。新增两档 epsilon 未刷新原网格最高奖励或最低短缺，均为开发集描述性比较。
 
 全部新增生成、评分、原始日志、实际输入与模型配置已加入[分卷归档](artifacts/v73_epsilon_extension_20261111/README.md)，含逐文件 SHA256 和恢复说明。模型权重与优化器 checkpoint 保留在共享服务器，最终模型的路径和 SHA256 见 `audit/model_exports.json`。本轮未进行独立 final test。
+
+## 6. 第 7 节统一人数增长实验（2026-11-19）
+
+状态：**分析完成**。本项核查并复用了旧版报告记录的 18 个 convergence checkpoint：3 个重复 ×（N=1、5、11、51、101 的 empirical soft DPO + 1 个 matched oracle soft DPO）。18/18 checkpoint 的 `final_hf/model.safetensors`、config、tokenizer 均可用，训练日志均正常退出；训练命令统一为 1B Llama、2 epochs、max_len=2048、effective batch=128、lr=5e-7、beta=0.01。没有发现缺失或配置不匹配组别，补训范围为 0。
+
+输入审计逐题核对了 2,000 个固定训练回答对、冻结 `p*` 和 repeat 对应的 oracle。每个重复使用自己的 vote/train seed（201/301、202/302、203/303），由 pair_id 派生的 Bernoulli 流核对出 N=1/5/11/51/101 是同一条 101 票序列的前缀；各 N 训练均从同一初始策略独立开始，oracle 使用对应重复的配置。
+
+复用 checkpoint 后，在冻结的 500 条 `test_diagnostic` 评测题上按同一设置生成：每模型每题 10 条，temperature=0.7、top_p=0.9、max_new_tokens=1024、context=4096，生成 seed 为 401/402/403；所有输出由同一 Skywork-Reward-V2-Llama-3.1-8B 评分。18/18 生成文件和 18/18 评分文件均为 5,000 行（500 题 × 10），逐题 prompt 集一致。r3 评分时 GPU0 被外部进程占满导致一次 RM 加载 OOM，随后在 GPU6 以同一 RM 和 batch=1 完成；没有重跑生成或改变解码设置。
+
+跨重复均值（均值 ± 重复标准差）如下；完整重复级表和逐题表见归档文件：
+
+| N | R | S_O |
+|---:|---:|---:|
+| 1 | 5.441521 ± 0.045890 | 0.974516 ± 0.010472 |
+| 5 | 5.502997 ± 0.060905 | 0.929584 ± 0.078820 |
+| 11 | 5.468125 ± 0.083428 | 0.932457 ± 0.063117 |
+| 51 | 5.428097 ± 0.121175 | 0.957515 ± 0.013120 |
+| 101 | 5.458350 ± 0.076601 | 0.952330 ± 0.032588 |
+
+本批结果没有呈现随 N 严格或总体单调接近 oracle 的曲线：3 次重复中 N=5 的平均 R 最高、S_O 最低，但 N=11/51/101 没有继续改善，重复波动与该差异同量级。因此只能报告本评测下 N=5 的描述性最好点，不能声称人数增加已经使 empirical soft DPO 稳定收敛到 oracle。
+
+- [第 7 节结果报告](artifacts/section7_growth_20261119/report/GROWTH_RESULTS_REPORT.md)
+- [重复级完整结果表](artifacts/section7_growth_20261119/report/growth_results_complete.csv)
+- [逐题结果表](artifacts/section7_growth_20261119/report/growth_prompt_metrics.csv)
+- [N 汇总表](artifacts/section7_growth_20261119/report/growth_results_by_N.csv)
+- [N—平均 RM 奖励图](artifacts/section7_growth_20261119/report/N_vs_mean_RM_reward.png)；[PDF](artifacts/section7_growth_20261119/report/N_vs_mean_RM_reward.pdf)
+- [N—oracle 短缺图](artifacts/section7_growth_20261119/report/N_vs_oracle_shortfall.png)；[PDF](artifacts/section7_growth_20261119/report/N_vs_oracle_shortfall.pdf)
+- [checkpoint、数据和 nested-prefix 审计](artifacts/section7_growth_20261119/audit/growth_audit.json)
+- [18 个生成/评分文件完整性审计](artifacts/section7_growth_20261119/audit/post_audit.json)
+- [执行状态与复用清单](artifacts/section7_growth_20261119/execution_status.json)
+
+原始生成（493 MB）和评分（501 MB）JSONL 保留在服务器 `/mnt/hezhisheng/su/convergence_eval_20261119/{generations,scored}`，逐文件 SHA256、行数及 prompt 集核验记录在 `audit/post_audit.json`；归档说明见 [section7_growth_20261119/README.md](artifacts/section7_growth_20261119/README.md)。
