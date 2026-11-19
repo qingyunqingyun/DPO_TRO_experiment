@@ -1,0 +1,19 @@
+{
+  "protocol_section": "7",
+  "status": "analysis_complete",
+  "checkpoint_groups_reused": 18,
+  "checkpoint_groups_retrained": 0,
+  "affected_groups": [],
+  "generation_models_complete": 18,
+  "scoring_models_complete": 18,
+  "rows_per_model": 5000,
+  "evaluation_prompts": 500,
+  "responses_per_prompt": 10,
+  "report": "report/GROWTH_RESULTS_REPORT.md",
+  "tables": ["report/growth_results_complete.csv", "report/growth_prompt_metrics.csv", "report/growth_results_by_N.csv"],
+  "figures": ["report/N_vs_mean_RM_reward.png", "report/N_vs_oracle_shortfall.png"],
+  "audit": ["audit/growth_audit.json", "audit/post_audit.json"],
+  "raw_server_path": "/mnt/hezhisheng/su/convergence_eval_20261119",
+  "note": "r3 scoring used GPU6 batch=1 after external GPU0 OOM; same RM and model outputs.",
+  "generated_at_utc": "2026-11-19T05:00:00Z"
+}

@@ -1,0 +1,526 @@
+{
+  "protocol_target": {
+    "Ns": [
+      1,
+      5,
+      11,
+      51,
+      101
+    ],
+    "repeats": 3,
+    "pairs": 2000,
+    "train_pair_sha256": "ffb9e2cbfd769f720864e763d4b129e3cef714de631bab5c0fcb1531a99dc4a6",
+    "train_oracle_sha256": "70a22a9b476036d002e33d0dced78494031c5113d13a4e8e33edea068eee5340",
+    "evaluation_sets": {
+      "dev": {
+        "path": "/mnt/hezhisheng/su/1030-lastest/experiment_handoff_v5/data/pairs/dev.jsonl",
+        "rows": 500,
+        "prompt_ids": "3c444c0dff068101e5db346974cf3b4438e599708430e89a9cbf8c839caaf223",
+        "unique_prompt_ids": 500
+      },
+      "test_diagnostic": {
+        "path": "/mnt/hezhisheng/su/1030-lastest/experiment_handoff_v5/data/pairs/test_diagnostic.jsonl",
+        "rows": 500,
+        "prompt_ids": "d63bea43050c04cd1007d26287a4e9f60d77037b7b619c79224137aa28e6e6dd",
+        "unique_prompt_ids": 500
+      }
+    }
+  },
+  "groups": [
+    {
+      "repeat": 1,
+      "vote_seed": 201,
+      "training_seed": 301,
+      "generation_seed": 401,
+      "soft": {
+        "1": {
+          "n": 1,
+          "observation_rows": 2000,
+          "soft_rows": 2000,
+          "oracle_rows": 2000,
+          "observation_sha256": "1ae7ef7b755d1188fac7bcb1e9cc278fd593d7d077c9a58506fc7d7a98800733",
+          "soft_sha256": "9ecace4c458d95bc3b69dec9f6ff136e253c3dae8fa0da2f5b6f8efb8012f0e1",
+          "oracle_sha256": "8baccee5864f8a047ef8cf9cbfdacddcb1ee51e6887402c8e14fc7fabc92bc3c",
+          "n_votes_values": [
+            1
+          ],
+          "pstar_mismatches": 0,
+          "sequence_mismatches": 0,
+          "pair_mismatches": 0,
+          "oracle_pstar_mismatches": 0,
+          "checkpoint_usable": true,
+          "checkpoint_path": "/mnt/hezhisheng/su/1030-lastest/experiment_handoff_v5/outputs/conv_r1_n1_soft/final_hf",
+          "log_success": true,
+          "training_command_checks": {
+            "--tro_method soft_dpo": "OK",
+            "--max_epochs 2": "OK",
+            "--learning_rate 5e-7": "OK",
+            "--beta 0.01": "OK",
+            "--max_len 2048": "OK",
+            "--train_batch_size=128": "OK",
+            "--seed 301": "OK"
+          }
+        },
+        "5": {
+          "n": 5,
+          "observation_rows": 2000,
+          "soft_rows": 2000,
+          "oracle_rows": 2000,
+          "observation_sha256": "2a767b791461f64c42e59e82d84133380d895b320d42b734dc05bedf6692ec04",
+          "soft_sha256": "528682d17f13c80598c484504af160f600a8e2df23c468d1904f277b1a3cf7be",
+          "oracle_sha256": "ae10923883752877308d5eb6e8ab9d867b88d1f111719a7421a4b5daade4f099",
+          "n_votes_values": [
+            5
+          ],
+          "pstar_mismatches": 0,
+          "sequence_mismatches": 0,
+          "pair_mismatches": 0,
+          "oracle_pstar_mismatches": 0,
+          "checkpoint_usable": true,
+          "checkpoint_path": "/mnt/hezhisheng/su/1030-lastest/experiment_handoff_v5/outputs/conv_r1_n5_soft/final_hf",
+          "log_success": true,
+          "training_command_checks": {
+            "--tro_method soft_dpo": "OK",
+            "--max_epochs 2": "OK",
+            "--learning_rate 5e-7": "OK",
+            "--beta 0.01": "OK",
+            "--max_len 2048": "OK",
+            "--train_batch_size=128": "OK",
+            "--seed 301": "OK"
+          }
+        },
+        "11": {
+          "n": 11,
+          "observation_rows": 2000,
+          "soft_rows": 2000,
+          "oracle_rows": 2000,
+          "observation_sha256": "9f95eea7bfd6493cf54f656ece850f8217a8d71ef3e7a914286f807bb3147af0",
+          "soft_sha256": "ff22e9de2bb9798d9e0c1ab68ae1278769c77a12bce9c7ce0a2d640638a696c0",
+          "oracle_sha256": "c08c1d146a7b7d97d2a3aa893b4767937be35bde8c60b89e98456cdd8f088d2a",
+          "n_votes_values": [
+            11
+          ],
+          "pstar_mismatches": 0,
+          "sequence_mismatches": 0,
+          "pair_mismatches": 0,
+          "oracle_pstar_mismatches": 0,
+          "checkpoint_usable": true,
+          "checkpoint_path": "/mnt/hezhisheng/su/1030-lastest/experiment_handoff_v5/outputs/conv_r1_n11_soft/final_hf",
+          "log_success": true,
+          "training_command_checks": {
+            "--tro_method soft_dpo": "OK",
+            "--max_epochs 2": "OK",
+            "--learning_rate 5e-7": "OK",
+            "--beta 0.01": "OK",
+            "--max_len 2048": "OK",
+            "--train_batch_size=128": "OK",
+            "--seed 301": "OK"
+          }
+        },
+        "51": {
+          "n": 51,
+          "observation_rows": 2000,
+          "soft_rows": 2000,
+          "oracle_rows": 2000,
+          "observation_sha256": "ae3e9cfa5a1dbb4242024b03ca0906798c4bfe1dcd2732ba0c6ff1d444198030",
+          "soft_sha256": "4f5adfadd1ac6364526b1b14285c066bd7c326035846514eab18bc35cb5f11e0",
+          "oracle_sha256": "7cbf55b45004c179cea95359b2c3c2dee55f57e08018d9bfb87016b06c550a35",
+          "n_votes_values": [
+            51
+          ],
+          "pstar_mismatches": 0,
+          "sequence_mismatches": 0,
+          "pair_mismatches": 0,
+          "oracle_pstar_mismatches": 0,
+          "checkpoint_usable": true,
+          "checkpoint_path": "/mnt/hezhisheng/su/1030-lastest/experiment_handoff_v5/outputs/conv_r1_n51_soft/final_hf",
+          "log_success": true,
+          "training_command_checks": {
+            "--tro_method soft_dpo": "OK",
+            "--max_epochs 2": "OK",
+            "--learning_rate 5e-7": "OK",
+            "--beta 0.01": "OK",
+            "--max_len 2048": "OK",
+            "--train_batch_size=128": "OK",
+            "--seed 301": "OK"
+          }
+        },
+        "101": {
+          "n": 101,
+          "observation_rows": 2000,
+          "soft_rows": 2000,
+          "oracle_rows": 2000,
+          "observation_sha256": "3aef682a5821a844df6ec491051374762d16795be05c58afe9c4d729353a4541",
+          "soft_sha256": "26593c4e45a251614c46666013b7697ba0aec26e4205bc302a4f7fa833a832df",
+          "oracle_sha256": "8ecc13ca93d1f0e220e1691a093ccd141ed513e49d0d5c225af8fbb24a4f24ee",
+          "n_votes_values": [
+            101
+          ],
+          "pstar_mismatches": 0,
+          "sequence_mismatches": 0,
+          "pair_mismatches": 0,
+          "oracle_pstar_mismatches": 0,
+          "checkpoint_usable": true,
+          "checkpoint_path": "/mnt/hezhisheng/su/1030-lastest/experiment_handoff_v5/outputs/conv_r1_n101_soft/final_hf",
+          "log_success": true,
+          "training_command_checks": {
+            "--tro_method soft_dpo": "OK",
+            "--max_epochs 2": "OK",
+            "--learning_rate 5e-7": "OK",
+            "--beta 0.01": "OK",
+            "--max_len 2048": "OK",
+            "--train_batch_size=128": "OK",
+            "--seed 301": "OK"
+          }
+        }
+      },
+      "oracle": {
+        "checkpoint_usable": true,
+        "checkpoint_path": "/mnt/hezhisheng/su/1030-lastest/experiment_handoff_v5/outputs/conv_r1_oracle/final_hf",
+        "log_success": true,
+        "training_command_checks": {
+          "--tro_method oracle_soft_dpo": "OK",
+          "--max_epochs 2": "OK",
+          "--learning_rate 5e-7": "OK",
+          "--beta 0.01": "OK",
+          "--max_len 2048": "OK",
+          "--train_batch_size=128": "OK",
+          "--seed 301": "OK"
+        },
+        "source_dataset": "/mnt/hezhisheng/su/1030-lastest/experiment_handoff_v5/datasets/conv_r1_n1/oracle_soft_dpo"
+      },
+      "nested_prefix_ok": true
+    },
+    {
+      "repeat": 2,
+      "vote_seed": 202,
+      "training_seed": 302,
+      "generation_seed": 402,
+      "soft": {
+        "1": {
+          "n": 1,
+          "observation_rows": 2000,
+          "soft_rows": 2000,
+          "oracle_rows": 2000,
+          "observation_sha256": "a538b304bf2e5b79b96b3b7f4aac6ab74cea91538d3130c58d6034c87a684a82",
+          "soft_sha256": "15e6ec1561449d9292ce12582b42c5060a0b2a15ded3524bb8f46753271b927e",
+          "oracle_sha256": "a0159fd218a66718a5a6d1e6f9902ca33330262c4fbe6dfdddcc58b3ad6d3d40",
+          "n_votes_values": [
+            1
+          ],
+          "pstar_mismatches": 0,
+          "sequence_mismatches": 0,
+          "pair_mismatches": 0,
+          "oracle_pstar_mismatches": 0,
+          "checkpoint_usable": true,
+          "checkpoint_path": "/mnt/hezhisheng/su/1030-lastest/experiment_handoff_v5/outputs/conv_r2_n1_soft/final_hf",
+          "log_success": true,
+          "training_command_checks": {
+            "--tro_method soft_dpo": "OK",
+            "--max_epochs 2": "OK",
+            "--learning_rate 5e-7": "OK",
+            "--beta 0.01": "OK",
+            "--max_len 2048": "OK",
+            "--train_batch_size=128": "OK",
+            "--seed 302": "OK"
+          }
+        },
+        "5": {
+          "n": 5,
+          "observation_rows": 2000,
+          "soft_rows": 2000,
+          "oracle_rows": 2000,
+          "observation_sha256": "81154d032781254942cbaab58bd526621247f3ba714021107ef6a30eb0f53f1c",
+          "soft_sha256": "ff1c5c23f229600f93790a2dfcf7ebde1d0929833e63332b7b0dc586718a9a4b",
+          "oracle_sha256": "71646bad129aeafc9107178d86c64fe33b33c5b3bd81f9672f591404e034b0b5",
+          "n_votes_values": [
+            5
+          ],
+          "pstar_mismatches": 0,
+          "sequence_mismatches": 0,
+          "pair_mismatches": 0,
+          "oracle_pstar_mismatches": 0,
+          "checkpoint_usable": true,
+          "checkpoint_path": "/mnt/hezhisheng/su/1030-lastest/experiment_handoff_v5/outputs/conv_r2_n5_soft/final_hf",
+          "log_success": true,
+          "training_command_checks": {
+            "--tro_method soft_dpo": "OK",
+            "--max_epochs 2": "OK",
+            "--learning_rate 5e-7": "OK",
+            "--beta 0.01": "OK",
+            "--max_len 2048": "OK",
+            "--train_batch_size=128": "OK",
+            "--seed 302": "OK"
+          }
+        },
+        "11": {
+          "n": 11,
+          "observation_rows": 2000,
+          "soft_rows": 2000,
+          "oracle_rows": 2000,
+          "observation_sha256": "a1eb88d0efa3a473187e65914be236f2fec885aacd26e2ad92380d90dbe15f08",
+          "soft_sha256": "0363aa17d6cd2b5432011c35b0548841a40ed3aac886abff4d747f7a3fa79f0f",
+          "oracle_sha256": "1f098fd244c07c40435a1ec4eed542af5e29428aca2278a322e2ab657b732c2d",
+          "n_votes_values": [
+            11
+          ],
+          "pstar_mismatches": 0,
+          "sequence_mismatches": 0,
+          "pair_mismatches": 0,
+          "oracle_pstar_mismatches": 0,
+          "checkpoint_usable": true,
+          "checkpoint_path": "/mnt/hezhisheng/su/1030-lastest/experiment_handoff_v5/outputs/conv_r2_n11_soft/final_hf",
+          "log_success": true,
+          "training_command_checks": {
+            "--tro_method soft_dpo": "OK",
+            "--max_epochs 2": "OK",
+            "--learning_rate 5e-7": "OK",
+            "--beta 0.01": "OK",
+            "--max_len 2048": "OK",
+            "--train_batch_size=128": "OK",
+            "--seed 302": "OK"
+          }
+        },
+        "51": {
+          "n": 51,
+          "observation_rows": 2000,
+          "soft_rows": 2000,
+          "oracle_rows": 2000,
+          "observation_sha256": "06922e467fb72a08f5cdb5059c4bbdf5091c016be56aff0ee45815fc4813e0e7",
+          "soft_sha256": "2df4018b4e5a70242bdee194102b8e317f633937b25cba70466298fa3a61447d",
+          "oracle_sha256": "467eae02b8ec9eaf9618a251050d8df910c9362edde921c2048abfefe81d809b",
+          "n_votes_values": [
+            51
+          ],
+          "pstar_mismatches": 0,
+          "sequence_mismatches": 0,
+          "pair_mismatches": 0,
+          "oracle_pstar_mismatches": 0,
+          "checkpoint_usable": true,
+          "checkpoint_path": "/mnt/hezhisheng/su/1030-lastest/experiment_handoff_v5/outputs/conv_r2_n51_soft/final_hf",
+          "log_success": true,
+          "training_command_checks": {
+            "--tro_method soft_dpo": "OK",
+            "--max_epochs 2": "OK",
+            "--learning_rate 5e-7": "OK",
+            "--beta 0.01": "OK",
+            "--max_len 2048": "OK",
+            "--train_batch_size=128": "OK",
+            "--seed 302": "OK"
+          }
+        },
+        "101": {
+          "n": 101,
+          "observation_rows": 2000,
+          "soft_rows": 2000,
+          "oracle_rows": 2000,
+          "observation_sha256": "0a77c6130bb189b241a122ba39b5de6831b187f85672cea8e3ff0599570c0134",
+          "soft_sha256": "6f6d5fdd1a078a4d5bfb44434e97e8edd61459e0fbd865f12d99e6d7893f1159",
+          "oracle_sha256": "2a201bcd4fa68d85e480d2cd202d414b3ccd6562c88163f8412b2121bbe1ea3c",
+          "n_votes_values": [
+            101
+          ],
+          "pstar_mismatches": 0,
+          "sequence_mismatches": 0,
+          "pair_mismatches": 0,
+          "oracle_pstar_mismatches": 0,
+          "checkpoint_usable": true,
+          "checkpoint_path": "/mnt/hezhisheng/su/1030-lastest/experiment_handoff_v5/outputs/conv_r2_n101_soft/final_hf",
+          "log_success": true,
+          "training_command_checks": {
+            "--tro_method soft_dpo": "OK",
+            "--max_epochs 2": "OK",
+            "--learning_rate 5e-7": "OK",
+            "--beta 0.01": "OK",
+            "--max_len 2048": "OK",
+            "--train_batch_size=128": "OK",
+            "--seed 302": "OK"
+          }
+        }
+      },
+      "oracle": {
+        "checkpoint_usable": true,
+        "checkpoint_path": "/mnt/hezhisheng/su/1030-lastest/experiment_handoff_v5/outputs/conv_r2_oracle/final_hf",
+        "log_success": true,
+        "training_command_checks": {
+          "--tro_method oracle_soft_dpo": "OK",
+          "--max_epochs 2": "OK",
+          "--learning_rate 5e-7": "OK",
+          "--beta 0.01": "OK",
+          "--max_len 2048": "OK",
+          "--train_batch_size=128": "OK",
+          "--seed 302": "OK"
+        },
+        "source_dataset": "/mnt/hezhisheng/su/1030-lastest/experiment_handoff_v5/datasets/conv_r2_n1/oracle_soft_dpo"
+      },
+      "nested_prefix_ok": true
+    },
+    {
+      "repeat": 3,
+      "vote_seed": 203,
+      "training_seed": 303,
+      "generation_seed": 403,
+      "soft": {
+        "1": {
+          "n": 1,
+          "observation_rows": 2000,
+          "soft_rows": 2000,
+          "oracle_rows": 2000,
+          "observation_sha256": "d08afa2980defe9d2fdc9563fdfc0f236aa6f604cff6a2ba971099cc411358e7",
+          "soft_sha256": "d3b4fdfbfdacbd8f658144bdcada9a57d0632abe1fdb378aca12a0a45c6b8d54",
+          "oracle_sha256": "48d436095acf920e8f25231b50e953a610cc5e195547b81fa12d63f531e86d55",
+          "n_votes_values": [
+            1
+          ],
+          "pstar_mismatches": 0,
+          "sequence_mismatches": 0,
+          "pair_mismatches": 0,
+          "oracle_pstar_mismatches": 0,
+          "checkpoint_usable": true,
+          "checkpoint_path": "/mnt/hezhisheng/su/1030-lastest/experiment_handoff_v5/outputs/conv_r3_n1_soft/final_hf",
+          "log_success": true,
+          "training_command_checks": {
+            "--tro_method soft_dpo": "OK",
+            "--max_epochs 2": "OK",
+            "--learning_rate 5e-7": "OK",
+            "--beta 0.01": "OK",
+            "--max_len 2048": "OK",
+            "--train_batch_size=128": "OK",
+            "--seed 303": "OK"
+          }
+        },
+        "5": {
+          "n": 5,
+          "observation_rows": 2000,
+          "soft_rows": 2000,
+          "oracle_rows": 2000,
+          "observation_sha256": "749c311e3b62f701c235c0ce167fa1abb012227ba347aedaf3af71ae80f46c34",
+          "soft_sha256": "d43ba4aed7b20084170cf9fb43b62165a6d5508f141ae16da5bd5d15eda2b0ee",
+          "oracle_sha256": "8091ecbe41e3d1234e176719ee03a94a0669a680905c50188b21356acb2dfbad",
+          "n_votes_values": [
+            5
+          ],
+          "pstar_mismatches": 0,
+          "sequence_mismatches": 0,
+          "pair_mismatches": 0,
+          "oracle_pstar_mismatches": 0,
+          "checkpoint_usable": true,
+          "checkpoint_path": "/mnt/hezhisheng/su/1030-lastest/experiment_handoff_v5/outputs/conv_r3_n5_soft/final_hf",
+          "log_success": true,
+          "training_command_checks": {
+            "--tro_method soft_dpo": "OK",
+            "--max_epochs 2": "OK",
+            "--learning_rate 5e-7": "OK",
+            "--beta 0.01": "OK",
+            "--max_len 2048": "OK",
+            "--train_batch_size=128": "OK",
+            "--seed 303": "OK"
+          }
+        },
+        "11": {
+          "n": 11,
+          "observation_rows": 2000,
+          "soft_rows": 2000,
+          "oracle_rows": 2000,
+          "observation_sha256": "cb7b92e20dcf238810edd6843ef0daba92ea297fa98f783f74b2d7e3a55a2e22",
+          "soft_sha256": "07a6498826311be70f38953f0cf4ee642ea43dec0969f2ba31db2af9ac8fd45c",
+          "oracle_sha256": "b0ed7a6f65a2f72f0c29b6a701b60b91e284f42e4c1e22241de95ebd2eddb5f0",
+          "n_votes_values": [
+            11
+          ],
+          "pstar_mismatches": 0,
+          "sequence_mismatches": 0,
+          "pair_mismatches": 0,
+          "oracle_pstar_mismatches": 0,
+          "checkpoint_usable": true,
+          "checkpoint_path": "/mnt/hezhisheng/su/1030-lastest/experiment_handoff_v5/outputs/conv_r3_n11_soft/final_hf",
+          "log_success": true,
+          "training_command_checks": {
+            "--tro_method soft_dpo": "OK",
+            "--max_epochs 2": "OK",
+            "--learning_rate 5e-7": "OK",
+            "--beta 0.01": "OK",
+            "--max_len 2048": "OK",
+            "--train_batch_size=128": "OK",
+            "--seed 303": "OK"
+          }
+        },
+        "51": {
+          "n": 51,
+          "observation_rows": 2000,
+          "soft_rows": 2000,
+          "oracle_rows": 2000,
+          "observation_sha256": "96c484deba669e8bcb61a1129f5d72d258d562df22b9c70a52a2af5be04ec895",
+          "soft_sha256": "44db6588eceb9d811601797e0a403df5d5c2d1213e018cea31c41823ce7fecc5",
+          "oracle_sha256": "e388a41031ecc8233e30fb71150f7eb9872950c5aacbfc05a65f6396bc4160b1",
+          "n_votes_values": [
+            51
+          ],
+          "pstar_mismatches": 0,
+          "sequence_mismatches": 0,
+          "pair_mismatches": 0,
+          "oracle_pstar_mismatches": 0,
+          "checkpoint_usable": true,
+          "checkpoint_path": "/mnt/hezhisheng/su/1030-lastest/experiment_handoff_v5/outputs/conv_r3_n51_soft/final_hf",
+          "log_success": true,
+          "training_command_checks": {
+            "--tro_method soft_dpo": "OK",
+            "--max_epochs 2": "OK",
+            "--learning_rate 5e-7": "OK",
+            "--beta 0.01": "OK",
+            "--max_len 2048": "OK",
+            "--train_batch_size=128": "OK",
+            "--seed 303": "OK"
+          }
+        },
+        "101": {
+          "n": 101,
+          "observation_rows": 2000,
+          "soft_rows": 2000,
+          "oracle_rows": 2000,
+          "observation_sha256": "8785adae0c8f1fd0b77b5e3d17e9461a2e90b830d104cd10196e9c6166ca66fc",
+          "soft_sha256": "94c967dd3b552bc4817d1d2e22e6bc7a515b88a92d1bd6017a6c98cb29fde6ff",
+          "oracle_sha256": "68f7c53ee76fa0880b1d10627324757e7c48e32e6758eae06bdfc94c62560276",
+          "n_votes_values": [
+            101
+          ],
+          "pstar_mismatches": 0,
+          "sequence_mismatches": 0,
+          "pair_mismatches": 0,
+          "oracle_pstar_mismatches": 0,
+          "checkpoint_usable": true,
+          "checkpoint_path": "/mnt/hezhisheng/su/1030-lastest/experiment_handoff_v5/outputs/conv_r3_n101_soft/final_hf",
+          "log_success": true,
+          "training_command_checks": {
+            "--tro_method soft_dpo": "OK",
+            "--max_epochs 2": "OK",
+            "--learning_rate 5e-7": "OK",
+            "--beta 0.01": "OK",
+            "--max_len 2048": "OK",
+            "--train_batch_size=128": "OK",
+            "--seed 303": "OK"
+          }
+        }
+      },
+      "oracle": {
+        "checkpoint_usable": true,
+        "checkpoint_path": "/mnt/hezhisheng/su/1030-lastest/experiment_handoff_v5/outputs/conv_r3_oracle/final_hf",
+        "log_success": true,
+        "training_command_checks": {
+          "--tro_method oracle_soft_dpo": "OK",
+          "--max_epochs 2": "OK",
+          "--learning_rate 5e-7": "OK",
+          "--beta 0.01": "OK",
+          "--max_len 2048": "OK",
+          "--train_batch_size=128": "OK",
+          "--seed 303": "OK"
+        },
+        "source_dataset": "/mnt/hezhisheng/su/1030-lastest/experiment_handoff_v5/datasets/conv_r3_n1/oracle_soft_dpo"
+      },
+      "nested_prefix_ok": true
+    }
+  ],
+  "issues": [],
+  "issue_count": 0,
+  "status": "PASS"
+}
