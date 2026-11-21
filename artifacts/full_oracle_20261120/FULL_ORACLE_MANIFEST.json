@@ -1,0 +1,88 @@
+{
+  "run_id": "oracle_full_20261120",
+  "status": "complete",
+  "interpretation": "all 61005 length-eligible training pairs; all 1995 eligible test prompts held out",
+  "data": {
+    "train_pairs": 61005,
+    "test_prompts": 1995,
+    "train_source": "/mnt/hezhisheng/su/1030-lastest/experiment_handoff_v5/data/raw/train_filtered.jsonl",
+    "test_source": "/mnt/hezhisheng/su/1030-lastest/experiment_handoff_v5/data/raw/test_filtered.jsonl"
+  },
+  "model": {
+    "policy": "Llama-3.2-1B-Instruct",
+    "rm": "Skywork/Skywork-Reward-V2-Llama-3.1-8B",
+    "oracle_temperature": 9.055908203125,
+    "epochs": 2,
+    "max_len": 2048,
+    "effective_batch": 128,
+    "lr": 5e-07,
+    "beta": 0.01
+  },
+  "evaluation": {
+    "responses_per_prompt": 10,
+    "rows": 19950,
+    "seed": 401,
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "max_new_tokens": 1024,
+    "context": 4096,
+    "rm_max_length": 4096,
+    "mean_R": 7.1573615810327365
+  },
+  "artifacts": {
+    "data/oracle_train_full.jsonl": {
+      "exists": true,
+      "bytes": 221140064,
+      "sha256": "889f7b21df059e44f2de5aa9da9820c6cdcc37a2fd7491452cd4083900ce5814",
+      "lines": 61005
+    },
+    "data/build_manifest.json": {
+      "exists": true,
+      "bytes": 603,
+      "sha256": "1ad97247b16449da948a294b375c41879e7f076b208bf7e8d5cf4800967afd54",
+      "lines": null
+    },
+    "datasets/full_oracle/dataset_dict.json": {
+      "exists": true,
+      "bytes": 28,
+      "sha256": "c1bb25fb603beacfe580e7f58dcb2f50816ae86e1130861cde35dddd0f28346b",
+      "lines": null
+    },
+    "outputs/full_oracle/final_hf/model.safetensors": {
+      "exists": true,
+      "bytes": 2471645608,
+      "sha256": "7f9547b2e5a159157d10c735023e5d5105e0469ebb386ea5e3a958ea4fe0f984",
+      "lines": null
+    },
+    "eval/full_test_generations.jsonl": {
+      "exists": true,
+      "bytes": 56810595,
+      "sha256": "dfdd80f11c336611dc95da650c5284c610d045384ff28dfc016e6c6d792d0142",
+      "lines": 19950
+    },
+    "eval/full_test_scored.jsonl": {
+      "exists": true,
+      "bytes": 57741984,
+      "sha256": "830254cdf3148355466b82447d7b828d6c78d76c6dd0131da51b98cb4b5493f4",
+      "lines": 19950
+    },
+    "report/FULL_ORACLE_REPORT.md": {
+      "exists": true,
+      "bytes": 1309,
+      "sha256": "87d2f355698b6d13918183980928d6f1afc43e82ed6d7f8b3e1ecb506e6bf541",
+      "lines": 37
+    },
+    "report/full_oracle_metrics.json": {
+      "exists": true,
+      "bytes": 937,
+      "sha256": "cbeae9ec3fc991c5e3825baeb4fb0f79a536aa74b1f3f1c0350b10cd424f7254",
+      "lines": null
+    },
+    "report/full_oracle_prompt_means.csv": {
+      "exists": true,
+      "bytes": 158429,
+      "sha256": "6c879eb4d761b74ff62c861588a9536a63da860203745b6af93b06ec6239fb05",
+      "lines": 1996
+    }
+  }
+}

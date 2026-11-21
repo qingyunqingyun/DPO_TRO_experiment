@@ -125,3 +125,16 @@
 - [执行状态与复用清单](artifacts/section7_growth_20261119/execution_status.json)
 
 原始生成（493 MB）和评分（501 MB）JSONL 保留在服务器 `/mnt/hezhisheng/su/convergence_eval_20261119/{generations,scored}`，逐文件 SHA256、行数及 prompt 集核验记录在 `audit/post_audit.json`；归档说明见 [section7_growth_20261119/README.md](artifacts/section7_growth_20261119/README.md)。
+
+## 8. 全量 oracle soft DPO 实验（2026-11-20）
+
+状态：**训练、生成、评分和分析完成**。本批针对前述 2,000 对 pilot 的规模限制，使用 v5 版本中全部长度合格且按 prompt 去重后的 61,005 对训练回答对，重新用同一 Skywork Reward V2 计算全量 `p*`，训练一版全量 `oracle_soft_dpo`。独立评测使用全部 1,995 个长度合格的 `test_filtered` prompt，未参与训练。
+
+- 策略模型：Llama-3.2-1B-Instruct；训练 2 epochs，max_len=2048，effective batch=128，lr=5e-7，DPO beta=0.01，seed=1101。
+- RM：Skywork/Skywork-Reward-V2-Llama-3.1-8B；训练回答对和生成回答均使用同一冻结副本。
+- 全量训练温度：`T_pref=9.055908203125`，按全量训练清单非零绝对 RM 分差中位数冻结。
+- 评测：1,995 prompt × 每题 10 条，共 19,950 条；seed=401，temperature=0.7，top_p=0.9，max_new_tokens=1024，context=4096，RM max_length=4096。
+- 全量 oracle 平均 RM 奖励 `R=7.157362`；逐题均值标准差为 `10.475243`。
+- 训练从 2026-11-20 12:03 UTC 开始，最终权重于 14:50 UTC 导出；生成于 15:22 UTC 完成，评分与汇总于 15:42 UTC 完成。
+
+本批只训练了全量 oracle，尚未训练对应的全量 empirical soft DPO/TRO，因此不计算全量方法相对 oracle 的 `S_O`。报告和审计清单已提交到 [full_oracle_20261120](artifacts/full_oracle_20261120/)；模型权重和逐条生成/评分 JSONL 保留在服务器 `/mnt/hezhisheng/su/oracle_full_20261120/`，其 SHA256、行数和恢复说明见 `FULL_ORACLE_MANIFEST.json`。

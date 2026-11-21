@@ -1,0 +1,13 @@
+{
+  "pairs": 61005,
+  "scores": 61005,
+  "temperature": 9.055908203125,
+  "temperature_rule": "median_nonzero_absolute_gap_on_full_train_scores",
+  "p_star_mean": 0.5000640477034363,
+  "p_star_min": 0.0005789603336416043,
+  "p_star_max": 0.9991712937293319,
+  "pairs_sha256": "506fa0db350d23c203329cc9c6b39086be152b83cd763c66cde701e706e5cb8b",
+  "scores_sha256": "522ba98f25241d3407015307464e06b7854dce0bd7bc5d06f2d559ddd87f0962",
+  "oracle_sha256": "889f7b21df059e44f2de5aa9da9820c6cdcc37a2fd7491452cd4083900ce5814",
+  "dataset_output": "/mnt/hezhisheng/su/oracle_full_20261120/datasets/full_oracle"
+}
